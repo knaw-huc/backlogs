@@ -96,20 +96,20 @@
   - [X] *T061*: problemen mount k8s --> hoge belasting?
   - [X] *T059*: indexer job (SOLR) van Women Writers werkt niet
   - data_huygens v1: Data Huygens toonbaar maken
-    - T002: [X] import data BioPort
-    - T003: [X] vervangen plaatje
-    - T004: [X] colophon en beschrijving omdraaien in de dataset overview
-    - T005: [X] plaatje DWC fixen; naar https://
-    - T006: [X] provenanceInfo_body markdown/opmaak fixen in de dataset overview (zie charterportaal)
-    - T007: [X] configuratie data BioPort
-    - T008: [X] geen Timbuctoo-logo + tekst = Data Huygens ING
-    - T009: [X] vervangen teksten boilerplate
-    - T010: [X] fonts van boilerplate
-    - T011: [X] favicon in tabblad >> Timbuctoo logo
-    - T012: [X] deel van intro tekst verplaatsen
-    - T013: [X] zichtbaarheid van 'own datasets' configureerbaar maken; op data.huygens niet zichtbaar instellen
-    - T015: [X] nieuwe metadata file + afbeelding
-    - T016: [X] afbeelding bibliotheek data.huygens = https://commons.wikimedia.org/wiki/File:Rijksmuseum_library_02.jpg
+    - [X] *T002*: import data BioPort
+    - [X] *T003*: vervangen plaatje
+    - [X] *T004*: colophon en beschrijving omdraaien in de dataset overview
+    - [X] *T005*: plaatje DWC fixen; naar https://
+    - [X] *T006*: provenanceInfo_body markdown/opmaak fixen in de dataset overview (zie charterportaal)
+    - [X] *T007*: configuratie data BioPort
+    - [X] *T008*: geen Timbuctoo-logo + tekst = Data Huygens ING
+    - [X] *T009*: vervangen teksten boilerplate
+    - [X] *T010*: fonts van boilerplate
+    - [X] *T011*: favicon in tabblad >> Timbuctoo logo
+    - [X] *T012*: deel van intro tekst verplaatsen
+    - [X] *T013*: zichtbaarheid van 'own datasets' configureerbaar maken; op data.huygens niet zichtbaar instellen
+    - [X] *T015*: nieuwe metadata file + afbeelding
+    - [X] *T016*: afbeelding bibliotheek data.huygens = https://commons.wikimedia.org/wiki/File:Rijksmuseum_library_02.jpg
     - [X] *T050*: repository.huygens.knaw.nl redirect niet meer naar https://repositorytemp.jauco.nl/static/graphiql
 
   - browseable_datasets v2: Een dataset direct na het uploaden al redelijk bladerbaar krijgen
