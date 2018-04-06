@@ -1,4 +1,4 @@
-//current max task number: T090
+//current max task number: T091
 
 # in work
   - T030: [ ] Database sluit na upload en mapping
@@ -25,7 +25,6 @@
                 sed 's|http://schema.org/Person/biografisch_portaal> "\(.*\)"^^<http://schema.org/URL>|http://www.w3.org/2002/07/owl#sameAs> <\1>|'
     - T027: [X] nieuwe timbuctoo releasen
     - T041: [X] graphiql mutation om de descriptie (title, provenance, depiction, colophon, namen van de collecties) aan te passen
-      ~ T046: [ ] graphql mutation voor het bijwerken van de dataset metadata
     - T023: [ ] dataset VOID-description mutation toevoegen
     - T028: [ ] werk documentatie bij
                 - welke datatypen indexeren we als dates, 
@@ -45,7 +44,6 @@
     - T035: [X] "Create dataset" optie aanmaken in GUI
     - T037: [X] Upload web interface in de GUI voor rdf data
     - T039: [ ] andere gebruikers als editor/admin kunnen toevoegen aan je dataset (graphiql)
-      ~ T079: [ ] user rechten toekennen via graphQL
   tabular_upload v3.0: tabular upload
     Ge-uploade tabulaire data onder een voorspelbare graphql endpoint plaatsen en niet in het overzicht van collecties tonen
     - T031: [ ] Ge-uploade tabulaire data onder een voorspelbare graphql endpoint plaatsen + excel data niet in het overzicht van collecties tonen
@@ -57,6 +55,7 @@
   overdracht jauco
     - T063: [ ] overdracht beheerservices Timbuctoo instantie -- password etc.
     - T066: [ ] overdracht GUI
+  - T091: [ ] add default fulltext config based on the view config
   - T045: [ ] Migratiegids in data.huygens
   - T051: [ ] sortering van results? alfabetisch mogelijk?
   - T052: [ ] Remove hsid from frontend URI (aka: fix major security leak)
