@@ -92,6 +92,7 @@
   - T088: [ ] resourcesync API via graphQL exposen (list data from url and import dataset)
   - T089: [ ] volgorde van naamselementen in resultaten lijst (bv. "Pieter Winter van jonkheer" moet zijn "jonkheer Pieter van Winter")
   - T090: [ ] aantal personen in DWC in Anansi is de helft van aantal personen DWC in data.huygens 
+  - T091: [ ] Rechten optioneel maken bij opvragen datasets van de gebruiker in graphql (aboutMe -> dataSetMetaDataList)
 
 # archive
   - T073: [X] delete upload falende csv gaat fout --> er blijft een bestand hangen
