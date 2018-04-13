@@ -1,4 +1,4 @@
-//current max task number: T091
+//current max task number: T095
 
 # in work
   - T030: [ ] Database sluit na upload en mapping
@@ -32,6 +32,13 @@
                 - how to add valid describedBy data (must be rdf+xml in VOID)
 
     ~ T047: [ ] 2TBI is het mogelijk gegevens over projectpartners op te nemen op dataset homepage?
+    ~ T091: [ ] Rechten optioneel maken bij opvragen datasets van de gebruiker in graphql (aboutMe -> dataSetMetaDataList)
+    ~ T092: [ ] Implementeer boolean facet. (Lodewijk wilde bij 2TBI personen kunnen zien welke personen een connectie hadden met BioPort personen)
+    ~ T093: [ ] Bij een union type worden alleen de velden van het eerste type getoond in het 'Facet configuration screen'
+    ~ T094: [ ] Zorgen dat de indexer goede foutmeldingen geeft en om kan gaan met http foutcodes
+              > - Foutcodes van Timbuctoo (b.v. niet meer ingelogd)
+              > - Foutcodes van Elastic search (b.v. too many requests)
+    ~ T095: [ ] SummaryProps als een entity meerdere types heeft kan de verkeerde summary prop worden opgehaald.
   resourceSync v2.0:
     Make our resourcesync exchange protocol use changelists
     - T053: [X] Update ResourceSync spec to allow for separate changelist
