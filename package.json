@@ -1,0 +1,14 @@
+{
+  "name": "backlogs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:knaw-huc/backlogs.git",
+  "author": "Jauco Noordzij <code@jauco.nl>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nearleyc ./src/grammar.ne -o ./src/grammar.js && node ./src/parser.js"
+  },
+  "dependencies": {
+    "nearley": "^2.13.0"
+  }
+}

@@ -1,148 +1,148 @@
 //current max task number: T095
 
 # in work
-  - T030: [ ] Database sluit na upload en mapping
-  - T029: [ ] Schema geeft meer properties in metadata terug, dan die beschikbaar zijn (owl:sameAs bioport person, het ophalen van unknown via sameAs)
-  2TBI-demo
-    Datasets uploaden, zorgen dat de GUI configurabel genoeg is en eventuele bugs fixen zodat de demo werkt
-    - T084: [X] Summaryprops automatisch laten terugvallen op well-known predicates (zoals rdfs:label foaf:depiction etc) (misschien configureerbaar?)
-    - T020: [X] 2tbi, RAA en bioport importplannetje waarbij bioport id's alignen
-    - T021: [X] timbuctoo schema bug die getriggerd wordt door 2tbi data fixen
-    - T022: [X] View configurator aanpassen zodat we links naar andere entities kunnen maken
-    - T024: [X] Bioport mapping aanpassen en opnieuw runnen
-                subjecturi: http://www.biografischportaal.nl/persoon/{Bioport_id}
-                type: bioportperson
-                zorgen dat bij de import de rdfPrefix niet op example.org staat maar op de anansi prefix
-    - T025: [X] RAA mapping aanpassen en opnieuw runnen
-                subject: gewoon een custom uri
-                http://www.w3.org/2002/07/owl#sameAs {bprURL}
-                type: Ambtsdrager
-                viafurl als anyuri
-                plus officesheld
-                zorgen dat bij de import de rdfPrefix niet op example.org staat maar op de anansi prefix
-    - T026: [X] 2TBI via sed aanpassen en importeren
-                sameas: {bprURL}
-                sed 's|http://schema.org/Person/biografisch_portaal> "\(.*\)"^^<http://schema.org/URL>|http://www.w3.org/2002/07/owl#sameAs> <\1>|'
-    - T027: [X] nieuwe timbuctoo releasen
-    - T041: [X] graphiql mutation om de descriptie (title, provenance, depiction, colophon, namen van de collecties) aan te passen
-    - T023: [ ] dataset VOID-description mutation toevoegen
-    - T028: [ ] werk documentatie bij
-                - welke datatypen indexeren we als dates, 
-                - hoe kun je checken of je rdf valide is
-                - how to add valid describedBy data (must be rdf+xml in VOID)
-
-    ~ T047: [ ] 2TBI is het mogelijk gegevens over projectpartners op te nemen op dataset homepage?
-    ~ T091: [ ] Rechten optioneel maken bij opvragen datasets van de gebruiker in graphql (aboutMe -> dataSetMetaDataList)
-    ~ T092: [ ] Implementeer boolean facet. (Lodewijk wilde bij 2TBI personen kunnen zien welke personen een connectie hadden met BioPort personen)
-    ~ T093: [ ] Bij een union type worden alleen de velden van het eerste type getoond in het 'Facet configuration screen'
-    ~ T094: [ ] Zorgen dat de indexer goede foutmeldingen geeft en om kan gaan met http foutcodes
+  - [ ] T030: Database sluit na upload en mapping
+  - [ ] T029: Schema geeft meer properties in metadata terug, dan die beschikbaar zijn (owl:sameAs bioport person, het ophalen van unknown via sameAs)
+  B008: 2TBI-demo
+  > Datasets uploaden, zorgen dat de GUI configurabel genoeg is en eventuele bugs fixen zodat de demo werkt
+    - [X] T084: Summaryprops automatisch laten terugvallen op well-known predicates (zoals rdfs:label foaf:depiction etc) (misschien configureerbaar?)
+    - [X] T020: 2tbi, RAA en bioport importplannetje waarbij bioport id's alignen
+    - [X] T021: timbuctoo schema bug die getriggerd wordt door 2tbi data fixen
+    - [X] T022: View configurator aanpassen zodat we links naar andere entities kunnen maken
+    - [X] T024: Bioport mapping aanpassen en opnieuw runnen
+              > subjecturi: http://www.biografischportaal.nl/persoon/{Bioport_id}
+              > type: bioportperson
+              > zorgen dat bij de import de rdfPrefix niet op example.org staat maar op de anansi prefix
+    - [X] T025: RAA mapping aanpassen en opnieuw runnen
+              > subject: gewoon een custom uri
+              > http://www.w3.org/2002/07/owl#sameAs {bprURL}
+              > type: Ambtsdrager
+              > viafurl als anyuri
+              > plus officesheld
+              > zorgen dat bij de import de rdfPrefix niet op example.org staat maar op de anansi prefix
+    - [X] T026: 2TBI via sed aanpassen en importeren
+              > sameas: {bprURL}
+              > sed 's|http://schema.org/Person/biografisch_portaal> "\(.*\)"^^<http://schema.org/URL>|http://www.w3.org/2002/07/owl#sameAs> <\1>|'
+    - [X] T027: nieuwe timbuctoo releasen
+    - [X] T041: graphiql mutation om de descriptie (title, provenance, depiction, colophon, namen van de collecties) aan te passen
+    - [ ] T023: dataset VOID-description mutation toevoegen
+    - [ ] T028: werk documentatie bij
+              > - welke datatypen indexeren we als dates, 
+              > - hoe kun je checken of je rdf valide is
+              > - how to add valid describedBy data (must be rdf+xml in VOID)
+    - [-] T047: 2TBI is het mogelijk gegevens over projectpartners op te nemen op dataset homepage?
+    ~ [ ] T091: Rechten optioneel maken bij opvragen datasets van de gebruiker in graphql (aboutMe -> dataSetMetaDataList)
+    ~ [ ] T092: Implementeer boolean facet. (Lodewijk wilde bij 2TBI personen kunnen zien welke personen een connectie hadden met BioPort personen)
+    ~ [ ] T093: Bij een union type worden alleen de velden van het eerste type getoond in het 'Facet configuration screen'
+    ~ [ ] T094: Zorgen dat de indexer goede foutmeldingen geeft en om kan gaan met http foutcodes
               > - Foutcodes van Timbuctoo (b.v. niet meer ingelogd)
               > - Foutcodes van Elastic search (b.v. too many requests)
-    ~ T095: [ ] SummaryProps als een entity meerdere types heeft kan de verkeerde summary prop worden opgehaald.
-  resourceSync v2.0:
-    Make our resourcesync exchange protocol use changelists
-    - T053: [X] Update ResourceSync spec to allow for separate changelist
-    - T040: [ ] Update ResourceSync import code to allow for separate changelist (also check if update works)
-    - T042: [ ] Update ResourceSync generation code to provide a Changelist next to the resourcelist
-    - T043: [ ] resourcesync client protected resources
-    - T044: [ ] resourcesync update kunnen triggeren via graphql (dat betekent dat we per dataset moeten gaan bijhouden welke bron rs-url die had)
-  rdf_upload v2.0: rdf upload
-    Allow a user to do an upload throught the GUI
-    - T035: [X] "Create dataset" optie aanmaken in GUI
-    - T037: [X] Upload web interface in de GUI voor rdf data
-    - T039: [ ] andere gebruikers als editor/admin kunnen toevoegen aan je dataset (graphiql)
-  tabular_upload v3.0: tabular upload
-    Ge-uploade tabulaire data onder een voorspelbare graphql endpoint plaatsen en niet in het overzicht van collecties tonen
-    - T031: [ ] Ge-uploade tabulaire data onder een voorspelbare graphql endpoint plaatsen + excel data niet in het overzicht van collecties tonen
-    - T034: [ ] graphql mutation voor applyen van jsonnet mapping die als resultaat de evt. mapping errors teruggeeft (die nu in de js gechecked worden)
-    - T036: [ ] Upload web interface in de GUI voor csv data
-    - T038: [ ] GUI voor het uploaden van een jsonnet & json-ld mapping (misschien wel met codemirror voor het typen ervan) + iets dat de mapping aan de juiste csv file bindt
-
+    ~ [ ] T095: SummaryProps als een entity meerdere types heeft kan de verkeerde summary prop worden opgehaald.
+  B007: resourceSync (v2.0)
+  > Make our resourcesync exchange protocol use changelists
+    - [X] T053: Update ResourceSync spec to allow for separate changelist
+    - [ ] T040: Update ResourceSync import code to allow for separate changelist (also check if update works)
+    - [ ] T042: Update ResourceSync generation code to provide a Changelist next to the resourcelist
+    - [ ] T043: resourcesync client protected resources
+    - [ ] T044: resourcesync update kunnen triggeren via graphql (dat betekent dat we per dataset moeten gaan bijhouden welke bron rs-url die had)
+  B006: rdf_upload (v2.0)
+  > Allow a user to do an upload throught the GUI
+    - [X] T035: "Create dataset" optie aanmaken in GUI
+    - [X] T037: Upload web interface in de GUI voor rdf data
+    - [ ] T039: andere gebruikers als editor/admin kunnen toevoegen aan je dataset (graphiql)
+  B005: tabular upload (v3.0)
+  > Ge-uploade tabulaire data onder een voorspelbare graphql endpoint plaatsen en niet in het overzicht van collecties tonen
+    - [ ] T031: Ge-uploade tabulaire data onder een voorspelbare graphql endpoint plaatsen + excel data niet in het overzicht van collecties tonen
+    - [ ] T034: graphql mutation voor applyen van jsonnet mapping die als resultaat de evt. mapping errors teruggeeft (die nu in de js gechecked worden)
+    - [ ] T036: Upload web interface in de GUI voor csv data
+    - [ ] T038: GUI voor het uploaden van een jsonnet & json-ld mapping (misschien wel met codemirror voor het typen ervan) + iets dat de mapping aan de juiste csv file bindt
+>>>>>>> theirs
 # up next
-  overdracht jauco
-    - T063: [ ] overdracht beheerservices Timbuctoo instantie -- password etc.
-    - T066: [ ] overdracht GUI
-  - T091: [ ] add default fulltext config based on the view config
-  - T045: [ ] Migratiegids in data.huygens
-  - T051: [ ] sortering van results? alfabetisch mogelijk?
-  - T052: [ ] Remove hsid from frontend URI (aka: fix major security leak)
-  - T054: [ ] configuratie van links naar buiten toe (e.g. geonames, url met afbeelding, obituary url)
-  - T055: [ ] order of facet blocks in view is not the same as configured
-  - T056: [ ] possibility to position diffent fields in screen view on horizontal axis (so it seems to be a 'string')
-  - T057: [ ] data-issues in DWC: 
-              - year '4242'
-              - gender caps
-              - source dataset missing
-              - <html> tags
-  - T058: [ ] k8s scripts bugs bekijken
-  - T060: [ ] count o.i.d. op previous-next cursors zodat je weet waar je bent
-  - T062: [ ] mapping: generate provenance
-  - T064: [ ] elasticsearch indexen backoff if error
-  - T065: [ ] direct indexeren na upload gaat niet goed --> trigger te vroeg
-  - T067: [ ] test server with db backups
-  - T068: [ ] search in all datasets
-  - T070: [ ] remove ':' after field label in screen view
-  - T071: [ ] from record view a 'back button' to list of results
-  - T072: [ ] re-ordering (and selection) of collection blocks/rectangles in dataset view 
-  - T074: [ ] herstructureren dataset + stores
-  - T075: [ ] requestlogging GoReplay
-  - T076: [ ] promoted mutation in graphQL --> testen op DWC op data.huygens
-  - T077: [ ] persistent IDs (handle) voor entiteiten >> op welk niveau? >> inschatting tijd v dit issue?
-  - T078: [ ] mee scrollen van facet menubalk bij lange resultaten lijst
-  - T080: [ ] 1 clock voor Timbuctoo
-  - T081: [ ] view screen config: ingevoerde label zichtbaar (vgl. facet config)
-  - T082: [ ] problemen met ':' in ID-veld van csv na mapping --> dubbele uri encoding FE
-  - T083: [ ] verkorte URLs voor dataset namen
-  - T085: [ ] JsonLD edit endpoint naar nieuwe generate log (dataset overzetten) --> herstartbaar na reboot
-  - T086: [ ] dataset name toevoegen logging import
-  - T087: [ ] gegenereerde metadata moet content ook meegeven 
-  - T088: [ ] resourcesync API via graphQL exposen (list data from url and import dataset)
-  - T089: [ ] volgorde van naamselementen in resultaten lijst (bv. "Pieter Winter van jonkheer" moet zijn "jonkheer Pieter van Winter")
-  - T090: [ ] aantal personen in DWC in Anansi is de helft van aantal personen DWC in data.huygens 
-
+  B004: overdracht jauco
+    - [ ] T063: overdracht beheerservices Timbuctoo instantie -- password etc.
+    - [ ] T066: overdracht GUI
+  - [ ] T091: add default fulltext config based on the view config
+  - [ ] T045: Migratiegids in data.huygens
+  - [ ] T051: sortering van results? alfabetisch mogelijk?
+  - [ ] T052: Remove hsid from frontend URI (aka: fix major security leak)
+  - [ ] T054: configuratie van links naar buiten toe (e.g. geonames, url met afbeelding, obituary url)
+  - [ ] T055: order of facet blocks in view is not the same as configured
+  - [ ] T056: possibility to position diffent fields in screen view on horizontal axis (so it seems to be a 'string')
+  - [ ] T057: data-issues in DWC: 
+            > - year '4242'
+            > - gender caps
+            > - source dataset missing
+            > - <html> tags
+  - [ ] T058: k8s scripts bugs bekijken
+  - [ ] T060: count o.i.d. op previous-next cursors zodat je weet waar je bent
+  - [ ] T062: mapping: generate provenance
+  - [ ] T064: elasticsearch indexen backoff if error
+  - [ ] T065: direct indexeren na upload gaat niet goed --> trigger te vroeg
+  - [ ] T067: test server with db backups
+  - [ ] T068: search in all datasets
+  - [ ] T070: remove ':' after field label in screen view
+  - [ ] T071: from record view a 'back button' to list of results
+  - [ ] T072: re-ordering (and selection) of collection blocks/rectangles in dataset view 
+  - [ ] T074: herstructureren dataset + stores
+  - [ ] T075: requestlogging GoReplay
+  - [ ] T076: promoted mutation in graphQL --> testen op DWC op data.huygens
+  - [ ] T077: persistent IDs (handle) voor entiteiten >> op welk niveau? >> inschatting tijd v dit issue?
+  - [ ] T078: mee scrollen van facet menubalk bij lange resultaten lijst
+  - [ ] T080: 1 clock voor Timbuctoo
+  - [ ] T081: view screen config: ingevoerde label zichtbaar (vgl. facet config)
+  - [ ] T082: problemen met ':' in ID-veld van csv na mapping --> dubbele uri encoding FE
+  - [ ] T083: verkorte URLs voor dataset namen
+  - [ ] T085: JsonLD edit endpoint naar nieuwe generate log (dataset overzetten) --> herstartbaar na reboot
+  - [ ] T086: dataset name toevoegen logging import
+  - [ ] T087: gegenereerde metadata moet content ook meegeven 
+  - [ ] T088: resourcesync API via graphQL exposen (list data from url and import dataset)
+  - [ ] T089: volgorde van naamselementen in resultaten lijst (bv. "Pieter Winter van jonkheer" moet zijn "jonkheer Pieter van Winter")
+  - [ ] T090: aantal personen in DWC in Anansi is de helft van aantal personen DWC in data.huygens 
 # archive
-  - T073: [X] delete upload falende csv gaat fout --> er blijft een bestand hangen
-  - T069: [X] volgende Timbuctoo release dataset config aanpassen --> na merge refactor-storage
-  - T061: [X] problemen mount k8s --> hoge belasting?
-  - T059: [X] indexer job (SOLR) van Women Writers werkt niet
-  ~ T048: [ ] Anansi: IISG data configureren 
-  data_huygens v1: Data Huygens toonbaar maken
-    - T002: [X] import data BioPort
-    - T003: [X] vervangen plaatje
-    - T004: [X] colophon en beschrijving omdraaien in de dataset overview
-    - T005: [X] plaatje DWC fixen; naar https://
-    - T006: [X] provenanceInfo_body markdown/opmaak fixen in de dataset overview (zie charterportaal)
-    - T007: [X] configuratie data BioPort
-    - T008: [X] geen Timbuctoo-logo + tekst = Data Huygens ING
-    - T009: [X] vervangen teksten boilerplate
-    - T010: [X] fonts van boilerplate
-    - T011: [X] favicon in tabblad >> Timbuctoo logo
-    - T012: [X] deel van intro tekst verplaatsen
-    - T013: [X] zichtbaarheid van 'own datasets' configureerbaar maken; op data.huygens niet zichtbaar instellen
-    - T015: [X] nieuwe metadata file + afbeelding
-    - T016: [X] afbeelding bibliotheek data.huygens = https://commons.wikimedia.org/wiki/File:Rijksmuseum_library_02.jpg
-    - T050: [X] repository.huygens.knaw.nl redirect niet meer naar https://repositorytemp.jauco.nl/static/graphiql
-
-  browseable_datasets v2: Een dataset direct na het uploaden al redelijk bladerbaar krijgen
-    - T014: [X] fix rdfs:label autoconfig
-
-  toogdag 2018: werk voor de toogdag
-    - T017: [X] import data 2TBI - uit Nodegoat
-    - T018: [X] check of de 2TBI data die nu door nodegoat gepubliceerd wordt valide is
-    - T019: [X] 2TBI dates als daterange-facet werkt niet. Check of het een mapping of EDTF-fout is
-    - T032: [X] Anansi: dataset Places (=Gemeentegeschiedenis, nlgis & the other one) -- als featured dataset
-    - T033: [X] Anansi: dataset Concepts (= data DIAMANT) -- als featured dataset
-    - T049: [X] Anansi: dataset Persons (=DWC + BioPort) -- als featured dataset
-
+  - [X] T073: delete upload falende csv gaat fout --> er blijft een bestand hangen
+  - [X] T069: volgende Timbuctoo release dataset config aanpassen --> na merge refactor-storage
+  - [X] T061: problemen mount k8s --> hoge belasting?
+  - [X] T059: indexer job (SOLR) van Women Writers werkt niet
+  - [-] T048: Anansi: IISG data configureren 
+  B001: Data Huygens (v1)
+  > Data Huygens toonbaar maken
+    - [X] T002: import data BioPort
+    - [X] T003: vervangen plaatje
+    - [X] T004: colophon en beschrijving omdraaien in de dataset overview
+    - [X] T005: plaatje DWC fixen; naar https://
+    - [X] T006: provenanceInfo_body markdown/opmaak fixen in de dataset overview (zie charterportaal)
+    - [X] T007: configuratie data BioPort
+    - [X] T008: geen Timbuctoo-logo + tekst = Data Huygens ING
+    - [X] T009: vervangen teksten boilerplate
+    - [X] T010: fonts van boilerplate
+    - [X] T011: favicon in tabblad >> Timbuctoo logo
+    - [X] T012: deel van intro tekst verplaatsen
+    - [X] T013: zichtbaarheid van 'own datasets' configureerbaar maken; op data.huygens niet zichtbaar instellen
+    - [X] T015: nieuwe metadata file + afbeelding
+    - [X] T016: afbeelding bibliotheek data.huygens = https://commons.wikimedia.org/wiki/File:Rijksmuseum_library_02.jpg
+    - [X] T050: repository.huygens.knaw.nl redirect niet meer naar https://repositorytemp.jauco.nl/static/graphiql
+  B002: Browseable datasets (v2)
+  > Een dataset direct na het uploaden al redelijk bladerbaar krijgen
+    - [X] T014: fix rdfs:label autoconfig
+  B003: toogdag (2018)
+  > werk voor de toogdag
+    - [X] T017: import data 2TBI - uit Nodegoat
+    - [X] T018: check of de 2TBI data die nu door nodegoat gepubliceerd wordt valide is
+    - [X] T019: 2TBI dates als daterange-facet werkt niet. Check of het een mapping of EDTF-fout is
+    - [X] T032: Anansi: dataset Places (=Gemeentegeschiedenis, nlgis & the other one) -- als featured dataset
+    - [X] T033: Anansi: dataset Concepts (= data DIAMANT) -- als featured dataset
+    - [X] T049: Anansi: dataset Persons (=DWC + BioPort) -- als featured dataset
 # projects
-  Emlo:
-    functional_manager: "Arno Bosse" <arno.bosse@oxford.edu.uk>
-    requirements:
-      EMLO_AUTH: Allow login integration with their systems
-        delivered: no
-        deadline: 2008-12-14
-        description: ''
-        references:
-          quote: ''
-          document: ''
-          page: ''
+  Emlo ("Arno Bosse" <arno.bosse@oxford.edu.uk>)
+    - [ ] EMLO_AUTH: Allow login integration with their systems
+    - [ ] EMDates: A webapi + app for converting dates that uses data from EM collections in timbuctoo
+    - [ ] EMPlaces: A configured dataset in timbuctoo for place data
+    - [ ] EMPeople: A configured dataset in timbuctoo for people data
+    - [ ] Peripleo_API: Implement the peripleo API to provide data from the timbuctoo instance
+    - [ ] EMLO_bugreports: Handling data bugreports or data submissions
+    - [ ] EMLO_tinyurl: Generate short, persistent, somewhat readable uri's for citation of entities
+      > - they refer to entries. Not search results
+      > - We could implement it as a URI shortener
+      > - we should handle the case where two entries are merged
+      > - These are the public uri's that redirect you to the view details page of the entity
+        -- https://trello.com/c/jfR5PMmk/76
