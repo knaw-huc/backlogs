@@ -38,6 +38,12 @@
               > - Foutcodes van Timbuctoo (b.v. niet meer ingelogd)
               > - Foutcodes van Elastic search (b.v. too many requests)
     ~ [ ] T095: SummaryProps als een entity meerdere types heeft kan de verkeerde summary prop worden opgehaald.
+    ~ [ ] T096: Databases sluiten af en toe na mappen
+              > 1. import excel
+              > 2. execute mapping
+              > 3. Vraag data op via front-end (geeft de foutmelding)
+              
+    
   B007: resourceSync (v2.0)
   > Make our resourcesync exchange protocol use changelists
     - [X] T053: Update ResourceSync spec to allow for separate changelist
