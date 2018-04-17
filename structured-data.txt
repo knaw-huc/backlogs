@@ -1,10 +1,10 @@
-//current max task number: T096
+//current max task number: T097
 
 # in work
   - [ ] T030: Database sluit na upload en mapping
   - [ ] T029: Schema geeft meer properties in metadata terug, dan die beschikbaar zijn (owl:sameAs bioport person, het ophalen van unknown via sameAs)
   B009: Timbuctoo stabieler maken
-    - [ ] T096: Schema bugs fixen en betere testcases maken
+    - [ ] T097: Schema bugs fixen en betere testcases maken
     ~ [ ] T093: Bij een union type worden alleen de velden van het eerste type getoond in het 'Facet configuration screen'
     ~ [ ] T094: Zorgen dat de indexer goede foutmeldingen geeft en om kan gaan met http foutcodes
               > - Foutcodes van Timbuctoo (b.v. niet meer ingelogd)
