@@ -3,6 +3,17 @@
 # in work
   - [ ] T030: Database sluit na upload en mapping
   - [ ] T029: Schema geeft meer properties in metadata terug, dan die beschikbaar zijn (owl:sameAs bioport person, het ophalen van unknown via sameAs)
+  B009: Timbuctoo stabieler maken
+    - [ ] T096: Schema bugs fixen en betere testcases maken
+    ~ [ ] T093: Bij een union type worden alleen de velden van het eerste type getoond in het 'Facet configuration screen'
+    ~ [ ] T094: Zorgen dat de indexer goede foutmeldingen geeft en om kan gaan met http foutcodes
+              > - Foutcodes van Timbuctoo (b.v. niet meer ingelogd)
+              > - Foutcodes van Elastic search (b.v. too many requests)
+    ~ [ ] T095: SummaryProps als een entity meerdere types heeft kan de verkeerde summary prop worden opgehaald.
+    ~ [ ] T096: Databases sluiten af en toe na mappen
+              > 1. import excel
+              > 2. execute mapping
+              > 3. Vraag data op via front-end (geeft de foutmelding)
   B008: 2TBI-demo
   > Datasets uploaden, zorgen dat de GUI configurabel genoeg is en eventuele bugs fixen zodat de demo werkt
     - [X] T084: Summaryprops automatisch laten terugvallen op well-known predicates (zoals rdfs:label foaf:depiction etc) (misschien configureerbaar?)
@@ -25,25 +36,12 @@
               > sed 's|http://schema.org/Person/biografisch_portaal> "\(.*\)"^^<http://schema.org/URL>|http://www.w3.org/2002/07/owl#sameAs> <\1>|'
     - [X] T027: nieuwe timbuctoo releasen
     - [X] T041: graphiql mutation om de descriptie (title, provenance, depiction, colophon, namen van de collecties) aan te passen
-    - [ ] T023: dataset VOID-description mutation toevoegen
+    - [X] T023: dataset VOID-description mutation toevoegen
     - [ ] T028: werk documentatie bij
               > - welke datatypen indexeren we als dates, 
               > - hoe kun je checken of je rdf valide is
               > - how to add valid describedBy data (must be rdf+xml in VOID)
     - [-] T047: 2TBI is het mogelijk gegevens over projectpartners op te nemen op dataset homepage?
-    ~ [ ] T091: Rechten optioneel maken bij opvragen datasets van de gebruiker in graphql (aboutMe -> dataSetMetaDataList)
-    ~ [ ] T092: Implementeer boolean facet. (Lodewijk wilde bij 2TBI personen kunnen zien welke personen een connectie hadden met BioPort personen)
-    ~ [ ] T093: Bij een union type worden alleen de velden van het eerste type getoond in het 'Facet configuration screen'
-    ~ [ ] T094: Zorgen dat de indexer goede foutmeldingen geeft en om kan gaan met http foutcodes
-              > - Foutcodes van Timbuctoo (b.v. niet meer ingelogd)
-              > - Foutcodes van Elastic search (b.v. too many requests)
-    ~ [ ] T095: SummaryProps als een entity meerdere types heeft kan de verkeerde summary prop worden opgehaald.
-    ~ [ ] T096: Databases sluiten af en toe na mappen
-              > 1. import excel
-              > 2. execute mapping
-              > 3. Vraag data op via front-end (geeft de foutmelding)
-              
-    
   B007: resourceSync (v2.0)
   > Make our resourcesync exchange protocol use changelists
     - [X] T053: Update ResourceSync spec to allow for separate changelist
@@ -62,8 +60,9 @@
     - [ ] T034: graphql mutation voor applyen van jsonnet mapping die als resultaat de evt. mapping errors teruggeeft (die nu in de js gechecked worden)
     - [ ] T036: Upload web interface in de GUI voor csv data
     - [ ] T038: GUI voor het uploaden van een jsonnet & json-ld mapping (misschien wel met codemirror voor het typen ervan) + iets dat de mapping aan de juiste csv file bindt
->>>>>>> theirs
 # up next
+  ~ [ ] T091: Rechten optioneel maken bij opvragen datasets van de gebruiker in graphql (aboutMe -> dataSetMetaDataList)
+  ~ [ ] T092: Implementeer boolean facet. (Lodewijk wilde bij 2TBI personen kunnen zien welke personen een connectie hadden met BioPort personen)
   B004: overdracht jauco
     - [ ] T063: overdracht beheerservices Timbuctoo instantie -- password etc.
     - [ ] T066: overdracht GUI
