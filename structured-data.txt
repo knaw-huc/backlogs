@@ -141,15 +141,48 @@
     - [X] T049: Anansi: dataset Persons (=DWC + BioPort) -- als featured dataset
 # projects
   Emlo ("Arno Bosse" <arno.bosse@oxford.edu.uk>)
-    - [ ] EMLO_AUTH: Allow login integration with their systems
-    - [ ] EMDates: A webapi + app for converting dates that uses data from EM collections in timbuctoo
-    - [ ] EMPlaces: A configured dataset in timbuctoo for place data
-    - [ ] EMPeople: A configured dataset in timbuctoo for people data
-    - [ ] Peripleo_API: Implement the peripleo API to provide data from the timbuctoo instance
-    - [ ] EMLO_bugreports: Handling data bugreports or data submissions
-    - [ ] EMLO_tinyurl: Generate short, persistent, somewhat readable uri's for citation of entities
+    - [ ] EmAuth: Allow login integration with their systems
+    - [ ] EmDates: A webapi + app for converting dates that uses data from EM collections in timbuctoo
+    - [ ] EmPlaces: A configured dataset in timbuctoo for place data
+    - [ ] EmPeople: A configured dataset in timbuctoo for people data
+    - [ ] EmPeripleoApi: Implement the peripleo API to provide data from the timbuctoo instance
+    - [ ] EmBugreports: Handling data bugreports or data submissions
+    - [ ] EmTinyurl: Generate short, persistent, somewhat readable uri's for citation of entities
       > - they refer to entries. Not search results
       > - We could implement it as a URI shortener
       > - we should handle the case where two entries are merged
       > - These are the public uri's that redirect you to the view details page of the entity
         -- https://trello.com/c/jfR5PMmk/76
+  Anansi ("Gertjan Filarski" <gertjan.filarski@huygens.knaw.nl>)
+    - [ ] CL_RdfIngest: We adapt timbuctoo to allow for RDF ingests and map the RDF to a graphql schema that allows for path walking.
+      > This task will deliver a linked data store with a RESTful API for basic CRUD operations. 
+      > Given that scalability and performance are considered crucial a native RDF-triple store is an unlikely option. 
+      > In this task both a document database – like MongoDB - storing JSON-LD is considered and a solution designed around more generalized structures like a graph store – e.g. Neo4J – with RDF/JSON-LD exposure.
+      > 
+      > The store will be accessible through (1) a REST API implemented in JAVA mapping JAVA entities to graph resources; 
+      > and (2) through various search API‘s. 
+      > A native query language: an RDF-triple store will offer built-in SPARQL while a generalized graph database like Neo4J offers e.g. the CYPHER query language. 
+      > 
+      > [...]
+      > 
+      > Budget: € 416.443,68 [=Also the budget for CL_ElasticsearchFilter]
+        -- CLARIAH TP - v1.0.pdf p.14
+    - [ ] Cl_ElasticsearchFilter: We index the RDF in elasticsearch and allow filtering of the graphql results through that index.
+      > Besides these native query languages the plan allows for data indexation as a method to improve performance. 
+      > Both SOLR and/or ElasticSearch are considered as alternative search engines.
+      > For front-end access Huygens ING will setup an API to allow implementation of its Faceted Search library.
+      > 
+      > [...]
+      > 
+      > Budget: € 416.443,68 [=Also the budget for CL_RdfIngest]
+        -- CLARIAH TP - v1.0.pdf p.14
+    - [ ] CL_Rml: A data conversion system through the RML language
+      > This task will provide automated maintenance tools. 
+      > At this moment tools for [...] internal and external linking [...] are considered. 
+      > Data provided by WP3, 4 and 5 is considered curated and ready to be included in the data store. 
+      > There are no provisions for further manual data curation of the centralized store by a permanent group of editors.
+      > 
+      > [...]
+      > 
+      > Budget: € 141.874,-
+        -- CLARIAH TP - v1.0.pdf p.15
