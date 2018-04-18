@@ -37,7 +37,7 @@
     - [X] T027: nieuwe timbuctoo releasen
     - [X] T041: graphiql mutation om de descriptie (title, provenance, depiction, colophon, namen van de collecties) aan te passen
     - [X] T023: dataset VOID-description mutation toevoegen
-    - [ ] T028: werk documentatie bij
+    - [X] T028: werk documentatie bij
               > - welke datatypen indexeren we als dates, 
               > - hoe kun je checken of je rdf valide is
               > - how to add valid describedBy data (must be rdf+xml in VOID)
