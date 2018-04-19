@@ -1,68 +1,72 @@
 //current max task number: T097
 
-# in work
+# 2018-04
   - [ ] T030: Database sluit na upload en mapping
   - [ ] T029: Schema geeft meer properties in metadata terug, dan die beschikbaar zijn (owl:sameAs bioport person, het ophalen van unknown via sameAs)
   B009: Timbuctoo stabieler maken
     - [ ] T097: Schema bugs fixen en betere testcases maken
     ~ [ ] T093: Bij een union type worden alleen de velden van het eerste type getoond in het 'Facet configuration screen'
     ~ [ ] T094: Zorgen dat de indexer goede foutmeldingen geeft en om kan gaan met http foutcodes
-              > - Foutcodes van Timbuctoo (b.v. niet meer ingelogd)
-              > - Foutcodes van Elastic search (b.v. too many requests)
+          - Foutcodes van Timbuctoo (b.v. niet meer ingelogd)
+          - Foutcodes van Elastic search (b.v. too many requests)
     ~ [ ] T095: SummaryProps als een entity meerdere types heeft kan de verkeerde summary prop worden opgehaald.
     ~ [ ] T096: Databases sluiten af en toe na mappen
-              > 1. import excel
-              > 2. execute mapping
-              > 3. Vraag data op via front-end (geeft de foutmelding)
+          1. import excel
+          2. execute mapping
+          3. Vraag data op via front-end (geeft de foutmelding)
   B008: 2TBI-demo
-  > Datasets uploaden, zorgen dat de GUI configurabel genoeg is en eventuele bugs fixen zodat de demo werkt
+    Datasets uploaden, zorgen dat de GUI configurabel genoeg is en eventuele bugs fixen zodat de demo werkt
+
     - [X] T084: Summaryprops automatisch laten terugvallen op well-known predicates (zoals rdfs:label foaf:depiction etc) (misschien configureerbaar?)
     - [X] T020: 2tbi, RAA en bioport importplannetje waarbij bioport id's alignen
     - [X] T021: timbuctoo schema bug die getriggerd wordt door 2tbi data fixen
     - [X] T022: View configurator aanpassen zodat we links naar andere entities kunnen maken
     - [X] T024: Bioport mapping aanpassen en opnieuw runnen
-              > subjecturi: http://www.biografischportaal.nl/persoon/{Bioport_id}
-              > type: bioportperson
-              > zorgen dat bij de import de rdfPrefix niet op example.org staat maar op de anansi prefix
+          subjecturi: http://www.biografischportaal.nl/persoon/{Bioport_id}
+          type: bioportperson
+          zorgen dat bij de import de rdfPrefix niet op example.org staat maar op de anansi prefix
     - [X] T025: RAA mapping aanpassen en opnieuw runnen
-              > subject: gewoon een custom uri
-              > http://www.w3.org/2002/07/owl#sameAs {bprURL}
-              > type: Ambtsdrager
-              > viafurl als anyuri
-              > plus officesheld
-              > zorgen dat bij de import de rdfPrefix niet op example.org staat maar op de anansi prefix
+          subject: gewoon een custom uri
+          http://www.w3.org/2002/07/owl#sameAs {bprURL}
+          type: Ambtsdrager
+          viafurl als anyuri
+          plus officesheld
+          zorgen dat bij de import de rdfPrefix niet op example.org staat maar op de anansi prefix
     - [X] T026: 2TBI via sed aanpassen en importeren
-              > sameas: {bprURL}
-              > sed 's|http://schema.org/Person/biografisch_portaal> "\(.*\)"^^<http://schema.org/URL>|http://www.w3.org/2002/07/owl#sameAs> <\1>|'
+          sameas: {bprURL}
+          sed 's|http://schema.org/Person/biografisch_portaal> "\(.*\)"^^<http://schema.org/URL>|http://www.w3.org/2002/07/owl#sameAs> <\1>|'
     - [X] T027: nieuwe timbuctoo releasen
     - [X] T041: graphiql mutation om de descriptie (title, provenance, depiction, colophon, namen van de collecties) aan te passen
     - [X] T023: dataset VOID-description mutation toevoegen
     - [X] T028: werk documentatie bij
-              > - welke datatypen indexeren we als dates, 
-              > - hoe kun je checken of je rdf valide is
-              > - how to add valid describedBy data (must be rdf+xml in VOID)
+          - welke datatypen indexeren we als dates, 
+          - hoe kun je checken of je rdf valide is
+          - how to add valid describedBy data (must be rdf+xml in VOID)
     - [-] T047: 2TBI is het mogelijk gegevens over projectpartners op te nemen op dataset homepage?
   B007: resourceSync (v2.0)
-  > Make our resourcesync exchange protocol use changelists
+    Make our resourcesync exchange protocol use changelists
+
     - [X] T053: Update ResourceSync spec to allow for separate changelist
     - [.] T040: Update ResourceSync import code to allow for separate changelist (also check if update works)
     - [.] T042: Update ResourceSync generation code to provide a Changelist next to the resourcelist
     - [ ] T044: resourcesync update kunnen triggeren via graphql (dat betekent dat we per dataset moeten gaan bijhouden welke bron rs-url die had)
-              > a graphql mutation for launching a resourcesync
-              > a graphql mutation for triggering an update of a resourcesync dataset
+          a graphql mutation for launching a resourcesync
+          a graphql mutation for triggering an update of a resourcesync dataset
     - [ ] T043: make the resourcesync client able to import password protected resources
   B006: rdf_upload (v2.0)
-  > Allow a user to do an upload throught the GUI
+    Allow a user to do an upload throught the GUI
+
     - [X] T035: "Create dataset" optie aanmaken in GUI
     - [X] T037: Upload web interface in de GUI voor rdf data
     - [ ] T039: andere gebruikers als editor/admin kunnen toevoegen aan je dataset (graphiql)
   B005: tabular upload (v3.0)
-  > Ge-uploade tabulaire data onder een voorspelbare graphql endpoint plaatsen en niet in het overzicht van collecties tonen
+    Ge-uploade tabulaire data onder een voorspelbare graphql endpoint plaatsen en niet in het overzicht van collecties tonen
+
     - [ ] T031: Ge-uploade tabulaire data onder een voorspelbare graphql endpoint plaatsen + excel data niet in het overzicht van collecties tonen
     - [ ] T034: graphql mutation voor applyen van jsonnet mapping die als resultaat de evt. mapping errors teruggeeft (die nu in de js gechecked worden)
     - [ ] T036: Upload web interface in de GUI voor csv data
     - [ ] T038: GUI voor het uploaden van een jsonnet & json-ld mapping (misschien wel met codemirror voor het typen ervan) + iets dat de mapping aan de juiste csv file bindt
-# up next
+# later
   ~ [ ] T091: Rechten optioneel maken bij opvragen datasets van de gebruiker in graphql (aboutMe -> dataSetMetaDataList)
   ~ [ ] T092: Implementeer boolean facet. (Lodewijk wilde bij 2TBI personen kunnen zien welke personen een connectie hadden met BioPort personen)
   B004: overdracht jauco
@@ -76,10 +80,10 @@
   - [ ] T055: order of facet blocks in view is not the same as configured
   - [ ] T056: possibility to position diffent fields in screen view on horizontal axis (so it seems to be a 'string')
   - [ ] T057: data-issues in DWC: 
-            > - year '4242'
-            > - gender caps
-            > - source dataset missing
-            > - <html> tags
+        - year '4242'
+        - gender caps
+        - source dataset missing
+        - <html> tags
   - [ ] T058: k8s scripts bugs bekijken
   - [ ] T060: count o.i.d. op previous-next cursors zodat je weet waar je bent
   - [ ] T062: mapping: generate provenance
@@ -107,48 +111,83 @@
   - [ ] T090: aantal personen in DWC in Anansi is de helft van aantal personen DWC in data.huygens 
 # projects
   Emlo ("Arno Bosse" <arno.bosse@oxford.edu.uk>)
-    - [ ] EmAuth: Allow login integration with their systems
-    - [ ] EmDates: A webapi + app for converting dates that uses data from EM collections in timbuctoo
-    - [ ] EmPlaces: A configured dataset in timbuctoo for place data
-    - [ ] EmPeople: A configured dataset in timbuctoo for people data
-    - [ ] EmPeripleoApi: Implement the peripleo API to provide data from the timbuctoo instance
-    - [ ] EmBugreports: Handling data bugreports or data submissions
-    - [ ] EmTinyurl: Generate short, persistent, somewhat readable uri's for citation of entities
-      > - they refer to entries. Not search results
-      > - We could implement it as a URI shortener
-      > - we should handle the case where two entries are merged
-      > - These are the public uri's that redirect you to the view details page of the entity
-        -- https://trello.com/c/jfR5PMmk/76
+    - [ ] EmAuth (2018-04-04)
+      Allow login integration with their systems
+
+    - [ ] EmDates
+      A webapi + app for converting dates that uses data from EM collections in timbuctoo
+
+    - [ ] EmPlaces
+      A configured dataset in timbuctoo for place data
+
+    - [ ] EmPeople
+      A configured dataset in timbuctoo for people data
+
+    - [ ] EmPeripleoApi
+      Implement the peripleo API to provide data from the timbuctoo instance
+
+    - [ ] EmBugreports
+      Handling data bugreports or data submissions
+
+    - [ ] EmTinyurl
+      Generate short, persistent, somewhat readable uri's for citation of entities
+          
+          > - they refer to entries. Not search results
+          > - We could implement it as a URI shortener
+          > - we should handle the case where two entries are merged
+          > - These are the public uri's that redirect you to the view details page of the entity
+            -- https://trello.com/c/jfR5PMmk/76
+
   Anansi ("Gertjan Filarski" <gertjan.filarski@huygens.knaw.nl>)
-    - [ ] CL_RdfIngest: We adapt timbuctoo to allow for RDF ingests and map the RDF to a graphql schema that allows for path walking.
-      > This task will deliver a linked data store with a RESTful API for basic CRUD operations. 
-      > Given that scalability and performance are considered crucial a native RDF-triple store is an unlikely option. 
-      > In this task both a document database – like MongoDB - storing JSON-LD is considered and a solution designed around more generalized structures like a graph store – e.g. Neo4J – with RDF/JSON-LD exposure.
-      > 
-      > The store will be accessible through (1) a REST API implemented in JAVA mapping JAVA entities to graph resources; 
-      > and (2) through various search API‘s. 
-      > A native query language: an RDF-triple store will offer built-in SPARQL while a generalized graph database like Neo4J offers e.g. the CYPHER query language. 
-      > 
-      > [...]
-      > 
-      > Budget: € 416.443,68 [=Also the budget for CL_ElasticsearchFilter]
-        -- CLARIAH TP - v1.0.pdf p.14
-    - [ ] Cl_ElasticsearchFilter: We index the RDF in elasticsearch and allow filtering of the graphql results through that index.
-      > Besides these native query languages the plan allows for data indexation as a method to improve performance. 
-      > Both SOLR and/or ElasticSearch are considered as alternative search engines.
-      > For front-end access Huygens ING will setup an API to allow implementation of its Faceted Search library.
-      > 
-      > [...]
-      > 
-      > Budget: € 416.443,68 [=Also the budget for CL_RdfIngest]
-        -- CLARIAH TP - v1.0.pdf p.14
-    - [ ] CL_Rml: A data conversion system through the RML language
-      > This task will provide automated maintenance tools. 
-      > At this moment tools for [...] internal and external linking [...] are considered. 
-      > Data provided by WP3, 4 and 5 is considered curated and ready to be included in the data store. 
-      > There are no provisions for further manual data curation of the centralized store by a permanent group of editors.
-      > 
-      > [...]
-      > 
-      > Budget: € 141.874,-
-        -- CLARIAH TP - v1.0.pdf p.15
+    - [ ] CL_RdfIngest (2018-12-31)
+      We adapt timbuctoo to allow for RDF ingests and map the RDF to a graphql schema that allows for path walking.
+
+      And some other ingelogd
+
+          > This task will deliver a linked data store with a RESTful API for basic CRUD operations. 
+          > Given that scalability and performance are considered crucial a native RDF-triple store is an unlikely option. 
+          > In this task both a document database – like MongoDB - storing JSON-LD is considered and a solution designed around more generalized structures like a graph store – e.g. Neo4J – with RDF/JSON-LD exposure.
+          > 
+          > The store will be accessible through (1) a REST API implemented in JAVA mapping JAVA entities to graph resources; 
+          > and (2) through various search API‘s. 
+          > A native query language: an RDF-triple store will offer built-in SPARQL while a generalized graph database like Neo4J offers e.g. the CYPHER query language. 
+          > 
+          > [...]
+          > 
+          > Budget: € 416.443,68 [=Also the budget for CL_ElasticsearchFilter]
+            -- CLARIAH TP - v1.0.pdf p.14
+
+    - [ ] Cl_ElasticsearchFilter (2018-12-31)
+      We index the RDF in elasticsearch and allow filtering of the graphql results through that index.
+          
+          > Besides these native query languages the plan allows for data indexation as a method to improve performance. 
+          > Both SOLR and/or ElasticSearch are considered as alternative search engines.
+          > For front-end access Huygens ING will setup an API to allow implementation of its Faceted Search library.
+          > 
+          > [...]
+          > 
+          > Budget: € 416.443,68 [=Also the budget for CL_RdfIngest]
+            -- CLARIAH TP - v1.0.pdf p.14
+
+          2018-04-05:
+            We planned to index the RDF in elasticsearch and allow filtering of the graphql results through that index.
+
+            However, we encountered probles
+          2018-04-05:
+            We plan to index the RDF in elasticsearch and allow filtering of the graphql results through that index.
+          2018-04-05:
+            We plan to index the RDF in elasticsearch and allow filtering of the graphql results through that index.
+
+    - [ ] CL_Rml (2018-12-31)
+      A data conversion system through the RML language
+          
+          > This task will provide automated maintenance tools. 
+          > At this moment tools for [...] internal and external linking [...] are considered. 
+          > Data provided by WP3, 4 and 5 is considered curated and ready to be included in the data store. 
+          > There are no provisions for further manual data curation of the centralized store by a permanent group of editors.
+          > 
+          > [...]
+          > 
+          > Budget: € 141.874,-
+            -- CLARIAH TP - v1.0.pdf p.15
+
