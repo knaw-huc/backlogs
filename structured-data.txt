@@ -1,7 +1,8 @@
 //current max task number: T099
 
 # 2018-04
-ophalen van unknown via sameAs)
+  - [>T096] T030: Database sluit na upload en mapping
+  - [>T097] T029: Schema geeft meer properties in metadata terug, dan die beschikbaar zijn (owl:sameAs bioport person, het ophalen van unknown via sameAs)
   B009: Timbuctoo stabieler maken
     - [ ] T097: Schema bugs fixen en betere testcases maken
     ~ [ ] T093: Bij een union type worden alleen de velden van het eerste type getoond in het 'Facet configuration screen'
@@ -13,8 +14,6 @@ ophalen van unknown via sameAs)
           1. import excel
           2. execute mapping
           3. Vraag data op via front-end (geeft de foutmelding)
-    - [>T096] T030: Database sluit na upload en mapping
-    - [>T097] T029: Schema geeft meer properties in metadata terug, dan die beschikbaar zijn (owl:sameAs bioport person, het 
   - [X] T054: configuratie van links naar buiten toe (e.g. geonames, url met afbeelding, obituary url)
   B008: 2TBI-demo
     Datasets uploaden, zorgen dat de GUI configurabel genoeg is en eventuele bugs fixen zodat de demo werkt
