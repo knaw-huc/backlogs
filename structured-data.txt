@@ -1,4 +1,4 @@
-//current max task number: T097
+//current max task number: T099
 
 # 2018-04
   B009: Timbuctoo stabieler maken
@@ -12,6 +12,7 @@
           1. import excel
           2. execute mapping
           3. Vraag data op via front-end (geeft de foutmelding)
+  - [X] T054: configuratie van links naar buiten toe (e.g. geonames, url met afbeelding, obituary url)
   B008: 2TBI-demo
     Datasets uploaden, zorgen dat de GUI configurabel genoeg is en eventuele bugs fixen zodat de demo werkt
 
@@ -50,6 +51,7 @@
     - [ ] T044: resourcesync update kunnen triggeren via graphql (dat betekent dat we per dataset moeten gaan bijhouden welke bron rs-url die had)
           a graphql mutation for launching a resourcesync
           a graphql mutation for triggering an update of a resourcesync dataset
+    - [>T044] T088: resourcesync API via graphQL exposen (list data from url and import dataset)
     - [ ] T043: make the resourcesync client able to import password protected resources
   B006: rdf_upload (v2.0)
     Allow a user to do an upload throught the GUI
@@ -70,43 +72,51 @@
   B004: overdracht jauco
     - [ ] T063: overdracht beheerservices Timbuctoo instantie -- password etc.
     - [ ] T066: overdracht GUI
-  - [ ] T091: add default fulltext config based on the view config
   - [ ] T045: Migratiegids in data.huygens
-  - [ ] T051: sortering van results? alfabetisch mogelijk?
-  - [ ] T052: Remove hsid from frontend URI (aka: fix major security leak)
-  - [ ] T054: configuratie van links naar buiten toe (e.g. geonames, url met afbeelding, obituary url)
-  - [ ] T055: order of facet blocks in view is not the same as configured
-  - [ ] T056: possibility to position diffent fields in screen view on horizontal axis (so it seems to be a 'string')
+  T099: GUI polish
+    - [ ] T091: add default fulltext config based on the view config
+    - [ ] T051: sortering van results? alfabetisch mogelijk?
+    - [ ] T052: Remove hsid from frontend URI (aka: fix major security leak)
+    - [ ] T055: order of facet blocks in view is not the same as configured
+    - [ ] T056: possibility to position diffent fields in screen view on horizontal axis (so it seems to be a 'string')
+    - [ ] T060: count o.i.d. op previous-next cursors zodat je weet waar je bent
+    - [ ] T070: remove ':' after field label in screen view
+    - [ ] T078: mee scrollen van facet menubalk bij lange resultaten lijst
+    - [ ] T081: view screen config: ingevoerde label zichtbaar (vgl. facet config)
   - [ ] T057: data-issues in DWC: 
         - year '4242'
         - gender caps
         - source dataset missing
         - <html> tags
-  - [ ] T058: k8s scripts bugs bekijken
-  - [ ] T060: count o.i.d. op previous-next cursors zodat je weet waar je bent
+  - [-] T058: k8s scripts bugs bekijken
   - [ ] T062: mapping: generate provenance
   - [ ] T064: elasticsearch indexen backoff if error
   - [ ] T065: direct indexeren na upload gaat niet goed --> trigger te vroeg
   - [ ] T067: test server with db backups
   - [ ] T068: search in all datasets
-  - [ ] T070: remove ':' after field label in screen view
   - [ ] T071: from record view a 'back button' to list of results
   - [ ] T072: re-ordering (and selection) of collection blocks/rectangles in dataset view 
-  - [ ] T074: herstructureren dataset + stores
-  - [ ] T075: requestlogging GoReplay
-  - [ ] T076: promoted mutation in graphQL --> testen op DWC op data.huygens
-  - [ ] T077: persistent IDs (handle) voor entiteiten >> op welk niveau? >> inschatting tijd v dit issue?
-  - [ ] T078: mee scrollen van facet menubalk bij lange resultaten lijst
-  - [ ] T080: 1 clock voor Timbuctoo
-  - [ ] T081: view screen config: ingevoerde label zichtbaar (vgl. facet config)
+  ~ [ ] T074: herstructureren dataset + stores
+  ~ [ ] T075: requestlogging GoReplay
+  - [ ] T076: add a mutation to mark a dataset as promoted in graphQL --> testen op DWC op data.huygens
+  - [ ] T077: persistent IDs (handle) voor entiteiten
+        Dat iedere nieuwe subject ook een predicate krijgt met daarin de url (als xsd:anyURI) van de PID-generator die dan
+        weer doorverwijst naar het item in de timbuctoo GUI. Het migreren van de PIDS als de config van timbuctoo wordt
+        aangepast valt buiten deze issue
+  ~ [ ] T080: 1 clock voor Timbuctoo
   - [ ] T082: problemen met ':' in ID-veld van csv na mapping --> dubbele uri encoding FE
   - [ ] T083: verkorte URLs voor dataset namen
   - [ ] T085: JsonLD edit endpoint naar nieuwe generate log (dataset overzetten) --> herstartbaar na reboot
-  - [ ] T086: dataset name toevoegen logging import
-  - [ ] T087: gegenereerde metadata moet content ook meegeven 
-  - [ ] T088: resourcesync API via graphQL exposen (list data from url and import dataset)
+  ~ [ ] T086: dataset name toevoegen logging import
+  - [ ] T087: gegenereerde metadata moet content van provenance ook meegeven 
   - [ ] T089: volgorde van naamselementen in resultaten lijst (bv. "Pieter Winter van jonkheer" moet zijn "jonkheer Pieter van Winter")
   - [ ] T090: aantal personen in DWC in Anansi is de helft van aantal personen DWC in data.huygens 
+  ~ [ ] T098: Move over to bazel
+        The bazel compiler is significantly faster and enforces a proper separation of packages and explicit dependencies
+        Currently we can run bazel just fine, however it might not run correctly during a docker build (we'd need to 
+        check that) and it is broken because commits often introduce new dependency usages. This task would mean to stop 
+        using maven as the default build and instead start using bazel on our pc's and on the CI build. We'd still keep the 
+        pom files and would still allow maven builds
 # projects
   Emlo ("Arno Bosse" <arno.bosse@oxford.edu.uk>)
     - [ ] EmAuth (2018-04-04)
