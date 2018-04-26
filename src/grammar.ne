@@ -7,7 +7,18 @@ SECTIONHEADER -> "# " ("later" | DATE) "\n"                                     
 TASK[prefix] -> $prefix MARKER " " CHECKBOX " " ID ": " TITLE TASKDESC[$prefix]:*                 {% ([prefix, marker, space1, checkbox, space, taskId, colon, title, taskdesc]) => ( {type: "task", title: title.text, tags: title.tags, id: taskId, status: checkbox, tentative: marker, description: taskdesc.length > 0 ? taskdesc.join("\n") : undefined} ) %}
 MARKER -> ("-" | "~" )                                                                            {% d => d[0][0] === "~" %}
 ID -> [a-zA-Z0-9_-]:+                                                                             {% d => d[0].join("") %}
-CHECKBOX -> ("[ ]" | "[X]" | "[-]" | "[.]")                                                       {% d => d[0][0] === "[X]" ? "CLOSED" : d[0][0] === "[-]" ? "CANCELLED" : d[0][0] === "[X]" ? "IN_WORK" : "OPEN" %}
+CHECKBOX -> "[" CHECKBOX_STATE "]"                                                                {% ([leftparen, state, rightparen]) => state %}
+CHECKBOX_STATE -> CHECKBOX_OPEN                                                                   {% ([status]) => status %}
+                | CHECKBOX_CLOSED
+                | CHECKBOX_CANCELED
+                | CHECKBOX_IN_WORK
+                | CHECKBOX_MERGED
+CHECKBOX_OPEN -> " "                                                                              {% d => ({type: "OPEN"}) %}
+CHECKBOX_CLOSED -> "X"                                                                            {% d => ({type: "CLOSED"}) %}
+CHECKBOX_CANCELED -> "-"                                                                          {% d => ({type: "CANCELED"}) %}
+CHECKBOX_IN_WORK -> "."                                                                           {% d => ({type: "IN_WORK"}) %}
+CHECKBOX_MERGED -> ">" [^\]]:*                                                                    {% ([bracket, otherTask]) => ({type: "MERGED", otherTask: otherTask.join("")}) %}
+
 TITLE -> .:+ TAG:* "\n"                                                                           {% d => ({ text: d[0].join(""), tags: d[1] }) %}
 TASKDESC[prefix] -> $prefix "      " REST_OF_LINE                                                 {% ([prefix, space, content]) => content %}
 
@@ -37,7 +48,8 @@ NAME -> [^(\n)]:*                                                               
 CONTACTS -> ((CONTACTS "; " CONTACT ) | CONTACT)                                                  {% function (d) { if (d[0][0].email) { return d[0] } else { return d[0][0][0].concat(d[0][0][2]) } } %}
 CONTACT -> "\"" [^"]:+ "\" <" [^>]:+ ">"                                                          {% ([quote, name, sep, email, sep2]) => ({name: name.join(""), email:email.join("")}) %}
 
-DELIVERABLES -> "    - " CHECKBOX " " ID DEADLINE:? "\n" DELIVERABLE_DESC:* QUOTE:* LOG_ENTRY:*   {% ([prefix, checkbox, space, id, deadline, newline, description, quotes, logs]) => ({type: "deliverable", id: id, done: checkbox, description: description.join("\n"), quotes: quotes, logs: logs}) %}
+DELIVERABLES -> "    - " DEL_DONE " " ID DEADLINE:? "\n" DELIVERABLE_DESC:* QUOTE:* LOG_ENTRY:*   {% ([prefix, checkbox, space, id, deadline, newline, description, quotes, logs]) => ({type: "deliverable", id: id, done: checkbox, description: description.join("\n"), quotes: quotes, logs: logs}) %}
+DEL_DONE -> ("[ ]" | "[X]" | "[-]")                                                               {% d => d[0][0] === "[X]" ? "CLOSED" : d[0][0] === "[-]" ? "CANCELLED" : "OPEN" %}
 DEADLINE -> " ":? "(" DATE ")"
 DELIVERABLE_DESC -> ("      " REST_OF_LINE | EMPTY) EMPTY                                         {% d => d[0] ? d[0][1] : "" %}
 
