@@ -1,4 +1,4 @@
-//current max task number: T099
+//current max task number: T100
 
 # 2018-04
   - [>T096] T030: Database sluit na upload en mapping
@@ -15,6 +15,8 @@
           2. execute mapping
           3. Vraag data op via front-end (geeft de foutmelding)
   - [X] T054: configuratie van links naar buiten toe (e.g. geonames, url met afbeelding, obituary url)
+  - [ ] T100: IntegratieTests falen als, de build van Timbuctoo te langzaam is
+        Dit gebeurd nu vooral op Dockerhub
   B008: 2TBI-demo
     Datasets uploaden, zorgen dat de GUI configurabel genoeg is en eventuele bugs fixen zodat de demo werkt
 
