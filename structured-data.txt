@@ -1,4 +1,4 @@
-//current max task number: T105
+//current max task number: T106
 
 # 2018-04
   - [ ] T104: Be able to browse from one dataset to another
@@ -68,10 +68,12 @@
     ~ [ ] T101: Upload status teruggeven (hoe ver timbuctoo is met uploaden) zodat je een progress bar kan weergeven
     - [ ] T039: andere gebruikers als editor/admin kunnen toevoegen aan je dataset (graphiql)
   B010: Work out how temporal features can be used while querying @EmPlaces @Humigec
+    - [ ] T105: Read up on the EMPlaces data model
+          https://github.com/culturesofknowledge/emplaces/
     - [ ] T103: How can we model and query which people lived in the same city at the same time
     - [ ] T104: How can we model and query that a query affects a certain time period (give me all people who where a married goldsmith between 1580 and 1620)
   B011: Be able to return results on a map @EmPlaces
-    - [ ] T105: How can elasticsearch return a limited amount of buckets for all results in geographic sections of roughly equal geographical size
+    - [ ] T106: How can elasticsearch return a limited amount of buckets for all results in geographic sections of roughly equal geographical size
           https://i.stack.imgur.com/f0T0x.png
 # later
   B005: tabular upload (v3.0)
