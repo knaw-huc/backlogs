@@ -1,22 +1,33 @@
 # 2018-04-04 - 2018-04-11
-  - [ ] T1: Report on planning and resources
-        GGE has calculated the general effects on planning and resources of the OpPlan. He will prepare a short report 
-        for the board meeting (20180409). The report and underlying spreadsheet will be shared.
   - [X] T2: Inventory of software that requires authentication @D5.3
         MMI will make an inventory of software that requires authentication through a federated login, and that is 
         hosted by DI. He will share this with Annet.
   - [X] T3: Ask Thijs as contact person for the HuC intranet
-  - [ ] T4: GGE will draft a timeline for closing the pied in The Hague.
   - [X] T5: MMI will make arrangements for volunteer Cor Munnik for the HSN. 
+
+# 2018-04-11 - 2018-04-18
+  - [ ] T14: Get the Operationalisation plan approved
+  - [ ] T15: BB intends to do its own survey among DI ‘clients’
+  - [ ] T1: Report on planning and resources
+        GGE has calculated the general effects on planning and resources of the OpPlan. He will prepare a short report 
+        for the board meeting (20180409). The report and underlying spreadsheet will be shared.
+  - [ ] T4: draft a timeline for closing the pied in The Hague.
   - [ ] T6: Together with GGE he will draft a general outline for working with volunteers at DI.
-  - [ ] T7: RHA will follow up after the Data Scopes workshop to organise a shorter internal DI workshop.
+  - [ ] T7: Follow up after the Data Scopes workshop to organise a shorter internal DI workshop.
   - [ ] T8: Get a affordable chat system set-up @D2.3
   - [ ] T9: Inventory of current HuC partner institute projects @D10.1
   - [ ] T10: Organise monthly presentation @D3.1
   - [ ] T11: Organise initial meeting April 26th @D3.1
   - [ ] T12: Draft list of requirements for migration @D5.1
-  - [ ] T13: Pick vendor for providing CaaS layour on top of our own IaaS platform @D7.2
-# 2018-04-11 - 2018-04-18
+  - T13: Pick vendor for providing CaaS layour on top of our own IaaS platform @D7.2
+    - [ ] T21: create a cost-calculation of the new situation
+    - [ ] T22: create an overview of the current costs
+  - [ ] T15: Check if we can find a short-term solution around the jira licence limitations
+  - [ ] T16: IISG: An inventory of ‘anything that requires work’, including hidden obligations @D10.1
+  - [ ] T17: HI: An inventory of ‘anything that requires work’, including hidden obligations @D10.1
+  - [ ] T18: MI: An inventory of ‘anything that requires work’, including hidden obligations @D10.1
+  - [ ] T19: Draft a first version of the organisation Chart @D4.1
+  - [ ] T20: Draft a list of impacts of the e-mail migration and who to contact if a problem arises @D5.3
 
 # 2018-04-18 - 2018-04-25
 
