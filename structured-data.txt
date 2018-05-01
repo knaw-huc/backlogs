@@ -1,4 +1,4 @@
-//current max task number: T100
+//current max task number: T103
 
 # 2018-04
   - [ ] T101: Import the GBA data of Amstelveen for Rutger
@@ -66,6 +66,10 @@
     - [X] T037: Upload web interface in de GUI voor rdf data
     ~ [ ] T101: Upload status teruggeven (hoe ver timbuctoo is met uploaden) zodat je een progress bar kan weergeven
     - [ ] T039: andere gebruikers als editor/admin kunnen toevoegen aan je dataset (graphiql)
+  B010: Work out how temporal features can be used while querying @EmPlaces @Humigec
+    - [ ] T103: How can we model and query which people lived in the same city at the same time
+    - [ ] T104: How can we model and query that a query affects a certain time period (give me all people who where a married goldsmith between 1580 and 1620)
+# later
   B005: tabular upload (v3.0)
     Ge-uploade tabulaire data onder een voorspelbare graphql endpoint plaatsen en niet in het overzicht van collecties tonen
 
@@ -74,7 +78,6 @@
     - [ ] T034: graphql mutation voor applyen van jsonnet mapping die als resultaat de evt. mapping errors teruggeeft (die nu in de js gechecked worden)
     - [ ] T036: Upload web interface in de GUI voor csv data
     - [ ] T038: GUI voor het uploaden van een jsonnet & json-ld mapping (misschien wel met codemirror voor het typen ervan) + iets dat de mapping aan de juiste csv file bindt
-# later
   ~ [ ] T092: Implementeer boolean facet. (Lodewijk wilde bij 2TBI personen kunnen zien welke personen een connectie hadden met BioPort personen)
   B004: overdracht jauco
     - [ ] T063: overdracht beheerservices Timbuctoo instantie -- password etc.
