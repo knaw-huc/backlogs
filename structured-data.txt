@@ -1,6 +1,8 @@
 //current max task number: T100
 
 # 2018-04
+  - [ ] T101: Import the GBA data of Amstelveen for Rutger
+  - [ ] T102: Test ingforms scripts
   - [>T096] T030: Database sluit na upload en mapping
   - [>T097] T029: Schema geeft meer properties in metadata terug, dan die beschikbaar zijn (owl:sameAs bioport person, het ophalen van unknown via sameAs)
   B009: Timbuctoo stabieler maken
@@ -9,7 +11,7 @@
     ~ [ ] T094: Zorgen dat de indexer goede foutmeldingen geeft en om kan gaan met http foutcodes
           - Foutcodes van Timbuctoo (b.v. niet meer ingelogd)
           - Foutcodes van Elastic search (b.v. too many requests)
-    ~ [ ] T095: SummaryProps als een entity meerdere types heeft kan de verkeerde summary prop worden opgehaald.
+    ~ [X] T095: SummaryProps als een entity meerdere types heeft kan de verkeerde summary prop worden opgehaald.
     ~ [ ] T096: Databases sluiten af en toe na mappen
           1. import excel
           2. execute mapping
@@ -50,7 +52,7 @@
     Make our resourcesync exchange protocol use changelists
 
     - [X] T053: Update ResourceSync spec to allow for separate changelist
-    - [.] T040: Update ResourceSync import code to allow for separate changelist (also check if update works)
+    - [X] T040: Update ResourceSync import code to allow for separate changelist (also check if update works)
     - [.] T042: Update ResourceSync generation code to provide a Changelist next to the resourcelist
     - [ ] T044: resourcesync update kunnen triggeren via graphql (dat betekent dat we per dataset moeten gaan bijhouden welke bron rs-url die had)
           a graphql mutation for launching a resourcesync
@@ -62,16 +64,17 @@
 
     - [X] T035: "Create dataset" optie aanmaken in GUI
     - [X] T037: Upload web interface in de GUI voor rdf data
+    ~ [ ] T101: Upload status teruggeven (hoe ver timbuctoo is met uploaden) zodat je een progress bar kan weergeven
     - [ ] T039: andere gebruikers als editor/admin kunnen toevoegen aan je dataset (graphiql)
   B005: tabular upload (v3.0)
     Ge-uploade tabulaire data onder een voorspelbare graphql endpoint plaatsen en niet in het overzicht van collecties tonen
 
+    ~ [ ] T102: Upload status teruggeven (hoe ver timbuctoo is met uploaden) zodat je een progress bar kan weergeven
     - [ ] T031: Ge-uploade tabulaire data onder een voorspelbare graphql endpoint plaatsen + excel data niet in het overzicht van collecties tonen
     - [ ] T034: graphql mutation voor applyen van jsonnet mapping die als resultaat de evt. mapping errors teruggeeft (die nu in de js gechecked worden)
     - [ ] T036: Upload web interface in de GUI voor csv data
     - [ ] T038: GUI voor het uploaden van een jsonnet & json-ld mapping (misschien wel met codemirror voor het typen ervan) + iets dat de mapping aan de juiste csv file bindt
 # later
-  ~ [ ] T091: Rechten optioneel maken bij opvragen datasets van de gebruiker in graphql (aboutMe -> dataSetMetaDataList)
   ~ [ ] T092: Implementeer boolean facet. (Lodewijk wilde bij 2TBI personen kunnen zien welke personen een connectie hadden met BioPort personen)
   B004: overdracht jauco
     - [ ] T063: overdracht beheerservices Timbuctoo instantie -- password etc.
