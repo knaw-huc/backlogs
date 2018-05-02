@@ -1,0 +1,41 @@
+// ~ [ ] draft item
+// - [ ] open item
+// - [.] work item
+// - [X] done item
+// - [-] cancelled item
+
+# 2018-05
+  - [ ] T001: make startup less dependend on timeouts
+  - [ ] T002: make the CLAM plugin more general, i.e., cover more of CLAM than what UCTO uses
+  - [ ] T003: create W3C PROV from the Kafka log + VRE registries @CLARIAH prov workshop
+  - [ ] T004: create a JSON schema for the parameters document
+  - [ ] T005: retrieve provenance info from (CLAM) services @CLARIAH_prov_workshop
+  - [ ] T006: ingest metadata and associate it with resources @M6
+  - [ ] T007: index the metadata in SOLR @M6
+  - [ ] T016: deploy docker service (experiment)
+  F002: first UI @M9
+    - [ ] T008: UI scaffolding
+    - [ ] T009: resource overview
+    - [ ] T010: metadata search
+    - [ ] T011: (general) service enable 
+  F003: basic services @M9
+    - [ ] T012: Folia Tools (FLAT)
+    - [ ] T013: Frog
+# later
+  - [ ] E001: investigate switch from OwnCloud to NextCloud
+  F004: interactive services @M12ev
+    - [ ] T014: Gretel
+    - [ ] T015: PaQu
+  F005: remote standard corpora @M12ev
+  - [ ] F001: dream up a nicer name
+# projects
+  CLARIAH WP3 VRE ("Daan Broeder" <daan.broeder@di.huc.knaw.nl>)
+    - [ ] CLARIAH_prov_workshop (2018-06)
+    - [ ] M6 (2018-06)
+      Owncloud + resource administration + CMDI search
+
+    - [ ] M9 (2018-06)
+      integrated basic services 
+
+    - [ ] M12ev (2018-12)
+      prototype-2 aspects
