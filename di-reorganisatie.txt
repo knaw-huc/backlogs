@@ -12,44 +12,57 @@
 
 # 2018-04-25 - 2018-05-02
   - [X] T20: Draft a list of impacts of the e-mail migration and who to contact if a problem arises @D5.3
-  - [ ] T7: Initial meetings for each team
-  - [ ] T15: BB intends to do its own survey among DI ‘clients’
-  - [ ] T1: Report on planning and resources
+  - [X] T7: Initial meetings for each team
+  - [X] T11: Organise initial meeting April 26th @D3.1
+  - [-] T15: Check if we can find a short-term solution around the jira licence limitations
+  - [X] T29: Make Jauco jira agent instead of Tarsis
+  
+# 2018-05-02 - 2018-05-09
+  - [X] T1: Report on planning and resources
         GGE has calculated the general effects on planning and resources of the OpPlan. He will prepare a short report 
         for the board meeting (20180409). The report and underlying spreadsheet will be shared.
+
+# current
   - [ ] T4: draft a timeline for closing the pied in The Hague.
-  - [ ] T6: Together with GGE he will draft a general outline for working with volunteers at DI.
   - [ ] T7: Follow up after the Data Scopes workshop to organise a shorter internal DI workshop.
+  - [ ] GDPR inventarisatie
+  - [ ] T15: nulmeting enquete
   - [ ] T8: Get a affordable chat system set-up @D2.3
   - [ ] T9: Inventory of current HuC partner institute projects @D10.1
+    - [X] T17: HI: An inventory of ‘anything that requires work’, including hidden obligations @D10.1
+    - [ ] T16: IISG: An inventory of ‘anything that requires work’, including hidden obligations @D10.1
+    - [X] T18: MI: An inventory of ‘anything that requires work’, including hidden obligations @D10.1
+    - [ ] T18: BB: An inventory of ‘anything that requires work’, including hidden obligations @D10.1
+    - [ ] Feedback van financien 
+          -> projectnrs aanvullen
+          -> Overzicht verplichtingen via risico inventarisatie
+    - [ ] Projectplan toevoegen per project
+          Mario voor IISG, Daan voor Meertens, Guido voor Huygens
+    - [ ] Quotes met onze verplichtingen uit het plan halen
+    - [ ] Bedrijfsbureau projecten hieraan toevoegen
   - [ ] T10: Organise monthly presentation @D3.1
-  - [ ] T11: Organise initial meeting April 26th @D3.1
+    - [ ] Draaiboek voor de meetings (onder andere wanneer is de inhoud klaar)
+    - [ ] Datums voor een jaar
+  - T22: Hire product owners
+    - [X] T23: Draft function profile for backlog owner of Team Text and Team Structured Data.
+    - [X] T24: Get HR included in the process
+    - [ ] T25: Get approval of Board (28 mei)
+    - [ ] T26: Invite applicants to apply
+    - [ ] T27: Meetings with everyone who appied
+    - [ ] T28: Publish decision
+  - [ ] T6: Together with GGE mario will draft a general outline for working with volunteers at DI.
   - [ ] T12: Draft list of requirements for migration @D5.1
   - T13: Pick vendor for providing CaaS layour on top of our own IaaS platform @D7.2
     - [ ] T21: create a cost-calculation of the new situation
     - [ ] T22: create an overview of the current costs
-  - [ ] T15: Check if we can find a short-term solution around the jira licence limitations
-  - [ ] T16: IISG: An inventory of ‘anything that requires work’, including hidden obligations @D10.1
-  - [ ] T17: HI: An inventory of ‘anything that requires work’, including hidden obligations @D10.1
-  - [ ] T18: MI: An inventory of ‘anything that requires work’, including hidden obligations @D10.1
   - [ ] T19: Draft a first version of the organisation Chart @D4.1
   - [ ] T21: Check if the remote-working guidelines of zapier can be applied to us @D3.4
-  - T22: Hire product owners
-    - [ ] T23: Draft function profile for backlog owner of Team Text and Team Structured Data.
-    - [ ] T24: Get HR included in the process
-    - [ ] T25: Get approval of Board
-    - [ ] T26: Invite applicants to apply
-    - [ ] T27: Meetings with everyone who appied
-    - [ ] T28: Publish decision
-  - [ ] T29: Make Jauco jira agent instead of Tarsis
   - T30: DI launch in september
     - [ ] select demo's presentations
-  
-# 2018-05-02
 
 # projects
   Acquisition
-    - [ ] D1.1: Inventory of current pipeline (2018/05/01)
+    - [X] D1.1: Inventory of current pipeline (2018/05/01)
     - [ ] D1.2: Creation of acquisition workflow (2018/07/01)
     - [ ] D1.3: Product & service catalogue with pricing - updated annually (2018/09/01)
     - [ ] D1.4: Acquisition and business model strategy document (2018/11/01)
