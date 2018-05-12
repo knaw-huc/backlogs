@@ -59,6 +59,8 @@
   - [ ] T21: Check if the remote-working guidelines of zapier can be applied to us @D3.4
   - T30: DI launch in september
     - [ ] select demo's presentations
+  - T31: Plan voor persistente URLs voor onze documentatie @D5.6 
+  - T32: Work out "Description of protocol to terminate existing services and obligations" @D8.4
 
 # projects
   Acquisition
