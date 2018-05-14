@@ -13,13 +13,12 @@
 
   - [ ] T001: make startup less dependend on timeouts
   - [ ] T002: make the CLAM plugin more general, i.e., cover more of CLAM than what UCTO uses
-  T003: create W3C PROV from the Kafka log + VRE registries @CLARIAH prov workshop
-    - [ ] T004: create a JSON schema for the parameters document
-    - [ ] T005: retrieve provenance info from (CLAM) services @CLARIAH_prov_workshop
-    - [ ] T006: ingest metadata and associate it with resources @M6
-    - [ ] T007: index the metadata in SOLR @M6
-    - [ ] T016: deploy docker service (experiment)
-
+  - [.] T003: create W3C PROV from the Kafka log + VRE registries @CLARIAH prov workshop
+  - [ ] T004: create a JSON schema for the parameters document
+  - [ ] T005: retrieve provenance info from (CLAM) services @CLARIAH_prov_workshop
+  - [ ] T006: ingest metadata and associate it with resources @M6
+  - [ ] T007: index the metadata in SOLR @M6
+  - [ ] T016: deploy docker service (experiment)
   F002: first UI @M9
     - [ ] T008: UI scaffolding
     - [ ] T009: resource overview
