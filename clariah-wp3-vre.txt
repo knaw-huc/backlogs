@@ -6,10 +6,10 @@
 
 # 2018-05
   B001: fix demo
-    - [.] deployment should always return JSON
-    - [.] deployment status should not depend on remote service, i.e., it is the local state
-    - [ ] switchboard doesn't get all result files
-    - [ ] integration test fails (always/often)
+    - [X] deployment should always return JSON
+    - [X] deployment status should not depend on remote service, i.e., it is the local state
+    - [X] switchboard doesn't get all result files
+    - [.] integration test fails (always/often)
 
   - [ ] T001: make startup less dependend on timeouts
   - [ ] T002: make the CLAM plugin more general, i.e., cover more of CLAM than what UCTO uses
@@ -31,7 +31,8 @@
     - [ ] T013: Frog
 
 # later
-  - [ ] E001: investigate switch from OwnCloud to NextCloud
+  - [ ] E001: investigate the use of WebDAV locking instead of file system "locking"
+  - [ ] E002: investigate switch from OwnCloud to NextCloud
   F004: interactive services @M12ev
     - [ ] T014: Gretel
     - [ ] T015: PaQu
