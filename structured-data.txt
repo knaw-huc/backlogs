@@ -1,4 +1,4 @@
-//current max task number: T106
+//current max task number: T107
 
 # 2018-04
   - [ ] T104: Be able to browse from one dataset to another
@@ -60,6 +60,7 @@
           a graphql mutation for triggering an update of a resourcesync dataset
     - [>T044] T088: resourcesync API via graphQL exposen (list data from url and import dataset)
     - [ ] T043: make the resourcesync client able to import password protected resources
+    - [ ] T107: store the original graph in the TruePatchStore
   B006: rdf_upload (v2.0)
     Allow a user to do an upload throught the GUI
 
