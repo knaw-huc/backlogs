@@ -75,7 +75,7 @@
     - [ ] T103: How can we model and query which people lived in the same city at the same time
     - [ ] T104: How can we model and query that a query affects a certain time period (give me all people who where a married goldsmith between 1580 and 1620)
   B011: Be able to return results on a map @EmPlaces
-    - [ ] T106: How can elasticsearch return a limited amount of buckets for all results in geographic sections of roughly equal geographical size
+    - [.] T106: How can elasticsearch return a limited amount of buckets for all results in geographic sections of roughly equal geographical size
           https://i.stack.imgur.com/f0T0x.png
           https://developers.google.com/maps/documentation/maps-static/intro
 # later
