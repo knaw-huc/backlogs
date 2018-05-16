@@ -94,7 +94,7 @@
   - [ ] T045: Migratiegids in data.huygens
   T099: GUI polish
     - [ ] T091: add default fulltext config based on the view config
-    - [ ] T051: sortering van results? alfabetisch mogelijk?
+    - [ ] T051: sortering van results? alfabetisch mogelijk? sortering op meerdere velden?
     - [ ] T052: Remove hsid from frontend URI (aka: fix major security leak)
     - [ ] T055: order of facet blocks in view is not the same as configured
     - [ ] T056: possibility to position diffent fields in screen view on horizontal axis (so it seems to be a 'string')
