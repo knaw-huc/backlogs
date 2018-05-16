@@ -1,4 +1,4 @@
-//current max task number: T108
+//current max task number: T110
 
 # 2018-04
   - [.] T104: Be able to browse from one dataset to another
@@ -136,6 +136,8 @@
         check that) and it is broken because commits often introduce new dependency usages. This task would mean to stop 
         using maven as the default build and instead start using bazel on our pc's and on the CI build. We'd still keep the 
         pom files and would still allow maven builds
+  - [ ] T109: volgorde van data behouden/modellen, bijv. lijst van auteurs bij een publicatie @Rutger
+  - [ ] T110: Core Trust Seal (fka Data Seal of Approval) for data.huygens and anansi.clariah
 # projects
   Emlo ("Arno Bosse" <arno.bosse@oxford.edu.uk>)
     - [ ] EmAuth (2018-04-04)
