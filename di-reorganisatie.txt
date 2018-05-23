@@ -15,6 +15,7 @@
   - [X] T7: Initial meetings for each team
   - [X] T11: Organise initial meeting April 26th @D3.1
   - [-] T15: Check if we can find a short-term solution around the jira licence limitations
+          MMI coordinates
   - [X] T29: Make Jauco jira agent instead of Tarsis
   
 # 2018-05-02 - 2018-05-09
@@ -23,39 +24,38 @@
         for the board meeting (20180409). The report and underlying spreadsheet will be shared.
 
 # current
-  - [ ] T4: draft a timeline for closing the pied in The Hague.
-  - [ ] T7: Follow up after the Data Scopes workshop to organise a shorter internal DI workshop.
-  - [ ] GDPR inventarisatie
+  - [X] T4: draft a timeline for closing the pied in The Hague.
+  - [.] T7: Follow up after the Data Scopes workshop to organise a shorter internal DI workshop.
+  - [.] GDPR inventarisatie
   - [ ] T15: nulmeting enquete
-  - [ ] T8: Get a affordable chat system set-up @D2.3
+  - [.] T8: Get a affordable chat system set-up @D2.3
   - [ ] T9: Inventory of current HuC partner institute projects @D10.1
     - [X] T17: HI: An inventory of ‘anything that requires work’, including hidden obligations @D10.1
-    - [ ] T16: IISG: An inventory of ‘anything that requires work’, including hidden obligations @D10.1
+    - [X] T16: IISG: An inventory of ‘anything that requires work’, including hidden obligations @D10.1
     - [X] T18: MI: An inventory of ‘anything that requires work’, including hidden obligations @D10.1
-    - [ ] T18: BB: An inventory of ‘anything that requires work’, including hidden obligations @D10.1
-    - [ ] Feedback van financien 
+    - [.] T18: BB: An inventory of ‘anything that requires work’, including hidden obligations @D10.1
+    - [.] Feedback van financien 
           -> projectnrs aanvullen
           -> Overzicht verplichtingen via risico inventarisatie
-    - [ ] Projectplan toevoegen per project
+    - [.] Projectplan toevoegen per project
           Mario voor IISG, Daan voor Meertens, Guido voor Huygens
-    - [ ] Quotes met onze verplichtingen uit het plan halen
-    - [ ] Bedrijfsbureau projecten hieraan toevoegen
-  - [ ] T10: Organise monthly presentation @D3.1
-    - [ ] Draaiboek voor de meetings (onder andere wanneer is de inhoud klaar)
-    - [ ] Datums voor een jaar
+    - [.] Quotes met onze verplichtingen uit het plan halen
+  - [.] T10: Organise monthly presentation @D3.1
+    - [.] Draaiboek voor de meetings (onder andere wanneer is de inhoud klaar)
+    - [X] Datums voor een jaar
   - T22: Hire product owners
     - [X] T23: Draft function profile for backlog owner of Team Text and Team Structured Data.
     - [X] T24: Get HR included in the process
-    - [ ] T25: Get approval of Board (28 mei)
+    - [.] T25: Get approval of Board (28 mei)
     - [ ] T26: Invite applicants to apply
     - [ ] T27: Meetings with everyone who appied
     - [ ] T28: Publish decision
   - [ ] T6: Together with GGE mario will draft a general outline for working with volunteers at DI.
   - [ ] T12: Draft list of requirements for migration @D5.1
   - T13: Pick vendor for providing CaaS layour on top of our own IaaS platform @D7.2
-    - [ ] T21: create a cost-calculation of the new situation
-    - [ ] T22: create an overview of the current costs
-  - [ ] T19: Draft a first version of the organisation Chart @D4.1
+    - [.] T21: create a cost-calculation of the new situation
+    - [.] T22: create an overview of the current costs
+  - [.] T19: Draft a first version of the organisation Chart @D4.1
   - [ ] T21: Check if the remote-working guidelines of zapier can be applied to us @D3.4
   - T30: DI launch in september
     - [ ] select demo's presentations
@@ -65,13 +65,13 @@
 # projects
   Acquisition
     - [X] D1.1: Inventory of current pipeline (2018/05/01)
-    - [ ] D1.2: Creation of acquisition workflow (2018/07/01)
+    - [X] D1.2: Creation of acquisition workflow (2018/07/01)
     - [ ] D1.3: Product & service catalogue with pricing - updated annually (2018/09/01)
     - [ ] D1.4: Acquisition and business model strategy document (2018/11/01)
     - [ ] D1.5: Periodical reporting and risk assessment of the pipeline (2018/12/01)
     - [ ] D1.6: Installation/adaptation of HuC ERP software to accommodate acquisition management (2019/03/31)
   Communication
-    - [ ] D2.1: Communication Plan (2018/06/01)
+    - [.] D2.1: Communication Plan (2018/06/01)
     - [ ] D2.2: Environment for broadcasting of information (HuC Intranet) (2018/12/01)
     - [ ] D2.3: Common chat environment (2018/04/01)
     - [ ] D2.4: Setting up product user panels (2018/09/01)
@@ -80,9 +80,9 @@
     - [ ] D2.7: DI Launch Event (2018/09/30)
     - [ ] D2.8: Creating PoD flyers and brochures, with inventory of showcases (2018/09/01)
   Corporate Culture
-    - [ ] D3.1: Organisation of monthly presentations by DI colleagues (2018/05/01)
+    - [.] D3.1: Organisation of monthly presentations by DI colleagues (2018/05/01)
     - [ ] D3.2: Organisation of periodic presentation/discussion sessions with a guest researcher (2018/06/01)
-    - [ ] D3.3: Organisation of two excursions (2018/06/01)
+    - [.] D3.3: Organisation of two excursions (2018/06/01)
     - [ ] D3.4: Procedures and tooling concerning working from home (2018/05/01)
     - [ ] D3.5: Evaluation of the corporate culture, as perceived by DI staff (2018/12/01)
   Governance Structure
