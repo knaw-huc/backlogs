@@ -1,5 +1,7 @@
-//current max task number: T110
+//current max task number: T111
 
+# New
+  - [ ] T111: JsonLd staat iri's toe met escape characters bijvoorbeeld: http://resources.huygens.knaw.nl/ingforms/atlantischewereld\\wetgeving. Deze worden echter aangepast door Rdf4J naar http://resources.huygens.knaw.nl/ingforms/atlantischewereld\wetgeving. Dit geeft problemen bij het aanmaken van het GraphQl schema. Hiervoor is een fix gemaakt. Het echte probleem, dat de uri's anders zijn dan het origineel, is hier nog niet mee opgelost.
 # 2018-04
   - [.] T104: Be able to browse from one dataset to another
   - [.] T101: Import the GBA data of Amstelveen for Rutger
