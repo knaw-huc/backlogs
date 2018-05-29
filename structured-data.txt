@@ -1,11 +1,11 @@
 //current max task number: T111
 
 # New
-  - [ ] T111: JsonLd staat iri's toe met escape characters bijvoorbeeld: http://resources.huygens.knaw.nl/ingforms/atlantischewereld\\wetgeving. Deze worden echter aangepast door Rdf4J naar http://resources.huygens.knaw.nl/ingforms/atlantischewereld\wetgeving. Dit geeft problemen bij het aanmaken van het GraphQl schema. Hiervoor is een fix gemaakt. Het echte probleem, dat de uri's anders zijn dan het origineel, is hier nog niet mee opgelost.
+  
 # 2018-04
   - [.] T104: Be able to browse from one dataset to another
-  - [.] T101: Import the GBA data of Amstelveen for Rutger
-  - [ ] T102: Test ingforms scripts
+  - [X] T101: Import the GBA data of Amstelveen for Rutger
+  - [.] T102: Test ingforms scripts
   - [>T096] T030: Database sluit na upload en mapping
   - [>T097] T029: Schema geeft meer properties in metadata terug, dan die beschikbaar zijn (owl:sameAs bioport person, het ophalen van unknown via sameAs)
   B009: Timbuctoo stabieler maken
@@ -22,10 +22,11 @@
   - [X] T054: configuratie van links naar buiten toe (e.g. geonames, url met afbeelding, obituary url)
   - [X] T100: IntegratieTests falen als, de build van Timbuctoo te langzaam is
         Dit gebeurd nu vooral op Dockerhub. Leuke bijvangst is dat we nu betere statusmessages kunnen tonen tijdens een import
+  - [ ] T111: JsonLd staat iri's toe met escape characters bijvoorbeeld: http://resources.huygens.knaw.nl/ingforms/atlantischewereld\\wetgeving. Deze worden echter aangepast door Rdf4J naar http://resources.huygens.knaw.nl/ingforms/atlantischewereld\wetgeving. Dit geeft problemen bij het aanmaken van het GraphQl schema. Hiervoor is een fix gemaakt. Het echte probleem, dat de uri's anders zijn dan het origineel, is hier nog niet mee opgelost.
   B008: 2TBI-demo
     Datasets uploaden, zorgen dat de GUI configurabel genoeg is en eventuele bugs fixen zodat de demo werkt
     - [ ] T108: Demo breekt met upload nieuwe versie Timbuctoo
-          Misschien tijd nodig om de SummaryProps backwards compatible te maken of een migratie toe te voegen
+          Migratie van oude SummaryProps
     - [X] T084: Summaryprops automatisch laten terugvallen op well-known predicates (zoals rdfs:label foaf:depiction etc) (misschien configureerbaar?)
     - [X] T020: 2tbi, RAA en bioport importplannetje waarbij bioport id's alignen
     - [X] T021: timbuctoo schema bug die getriggerd wordt door 2tbi data fixen
@@ -72,12 +73,12 @@
     ~ [ ] T101: Upload status teruggeven (hoe ver timbuctoo is met uploaden)
     - [ ] T039: andere gebruikers als editor/admin kunnen toevoegen aan je dataset (graphiql)
   B010: Work out how temporal features can be used while querying @EmPlaces @Humigec
-    - [ ] T105: Read up on the EMPlaces data model
+    - [.] T105: Read up on the EMPlaces data model
           https://github.com/culturesofknowledge/emplaces/
     - [ ] T103: How can we model and query which people lived in the same city at the same time
     - [ ] T104: How can we model and query that a query affects a certain time period (give me all people who where a married goldsmith between 1580 and 1620)
   B011: Be able to return results on a map @EmPlaces
-    - [.] T106: How can elasticsearch return a limited amount of buckets for all results in geographic sections of roughly equal geographical size
+    - [X] T106: How can elasticsearch return a limited amount of buckets for all results in geographic sections of roughly equal geographical size
           https://i.stack.imgur.com/f0T0x.png
           https://developers.google.com/maps/documentation/maps-static/intro
 # later
