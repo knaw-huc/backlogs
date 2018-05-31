@@ -1,7 +1,7 @@
 //current max task number: T111
 
 # New
-  
+  - [ ] Indexeren private datasets gaat niet goed op data.huygens.knaw.nl
 # 2018-04
   - [.] T104: Be able to browse from one dataset to another
   - [X] T101: Import the GBA data of Amstelveen for Rutger
