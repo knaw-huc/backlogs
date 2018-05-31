@@ -103,6 +103,7 @@
     - [ ] T056: possibility to position diffent fields in screen view on horizontal axis (so it seems to be a 'string')
     - [ ] T060: count o.i.d. op previous-next cursors zodat je weet waar je bent
     - [ ] T070: remove ':' after field label in screen view
+    - [ ] T071: from record view a 'back button' to list of results
     - [ ] T078: mee scrollen van facet menubalk bij lange resultaten lijst
     - [ ] T081: view screen config: ingevoerde label zichtbaar (vgl. facet config)
   - [ ] T057: data-issues in DWC: 
@@ -116,7 +117,6 @@
   - [ ] T065: direct indexeren na upload gaat niet goed --> trigger te vroeg
   - [ ] T067: test server with db backups
   - [ ] T068: search in all datasets
-  - [ ] T071: from record view a 'back button' to list of results
   - [ ] T072: re-ordering (and selection) of collection blocks/rectangles in dataset view 
   ~ [ ] T074: herstructureren dataset + stores
   ~ [ ] T075: requestlogging GoReplay
