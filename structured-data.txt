@@ -1,7 +1,8 @@
-//current max task number: T111
+//current max task number: T112
 
 # New
   - [ ] Indexeren private datasets gaat niet goed op data.huygens.knaw.nl
+  - [ ] Refactor ImportStatus and EntryImportStatus (remove extraneous information from ImportStatus).
 # 2018-04
   - [.] T104: Be able to browse from one dataset to another
   - [X] T101: Import the GBA data of Amstelveen for Rutger
