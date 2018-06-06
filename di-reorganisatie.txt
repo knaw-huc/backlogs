@@ -1,4 +1,4 @@
-//last used: T41
+//last used: T42
 # current
   - [.] T7: Follow up after the Data Scopes workshop to organise a shorter internal DI workshop.
   - [.] GDPR inventarisatie
@@ -42,6 +42,7 @@
     - [ ] select demo's presentations
   - T31: Plan voor persistente URLs voor onze documentatie @D5.6 
   - T32: Work out "Description of protocol to terminate existing services and obligations" @D8.4
+  - T42: List of dates for the DI meetings for the rest of the year @D3.1
 
 # projects
   Acquisition
