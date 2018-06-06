@@ -120,7 +120,7 @@
     - [ ] D9.9: Implementation of processes and collective planning 2019 (2019/09/30)
   Project Organisation
     - [ ] D10.1: Inventory of current HuC partner institute projects (2018/04/01)
-    - [ ] D10.2: Project management methodology (2018/06/01)
+    - [ ] D10.2: Project management methodology (2018/06/27)
     - [ ] D10.3: Implementation of project management environment (2018/09/01)
     - [ ] D10.4: Implementation of project management environment (2018/09/01)
   Product & Service Management
@@ -131,7 +131,7 @@
     - [ ] D11.5: Assign new backlog owners (2018/05/18)
     - [ ] D11.6: Write and communicate policies under which external parties can formally influence development (2018/09/01)
   R&D Agenda
-    - [ ] D12.1: Document containing R&D agenda and themes (2018/06/01)
+    - [ ] D12.1: Document containing R&D agenda and themes (2018/06/27)
     - [ ] D12.2: Webpage detailing the schedule of upcoming conferences and workshops the R&D team will be presenting (2018/07/01)
   Training & Education
     - [ ] D13.1: Policy document detailing the amount and type of training needed (2018/06/01)
