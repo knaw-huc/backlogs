@@ -135,5 +135,5 @@
     - [ ] D12.1: Document containing R&D agenda and themes (2018/06/27)
     - [ ] D12.2: Webpage detailing the schedule of upcoming conferences and workshops the R&D team will be presenting (2018/07/01)
   Training & Education
-    - [ ] D13.1: Policy document detailing the amount and type of training needed (2018/06/01)
+    - [ ] D13.1: Policy document detailing the amount and type of training needed (2018/11/01)
     - [ ] D13.2: Investigate whether the career development options offered by the KNAW are suitable (2018/09/01)
