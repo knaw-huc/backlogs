@@ -1,30 +1,5 @@
-# 2018-04-04 - 2018-04-11
-  - [X] T2: Inventory of software that requires authentication @D5.3
-        MMI will make an inventory of software that requires authentication through a federated login, and that is 
-        hosted by DI. He will share this with Annet.
-  - [X] T3: Ask Thijs as contact person for the HuC intranet
-  - [X] T5: MMI will make arrangements for volunteer Cor Munnik for the HSN. 
-
-# 2018-04-11 - 2018-04-18
-
-# 2018-04-18 - 2018-04-25
-  - [X] T14: Get the Operationalisation plan approved
-
-# 2018-04-25 - 2018-05-02
-  - [X] T20: Draft a list of impacts of the e-mail migration and who to contact if a problem arises @D5.3
-  - [X] T7: Initial meetings for each team
-  - [X] T11: Organise initial meeting April 26th @D3.1
-  - [-] T15: Check if we can find a short-term solution around the jira licence limitations
-          MMI coordinates
-  - [X] T29: Make Jauco jira agent instead of Tarsis
-  
-# 2018-05-02 - 2018-05-09
-  - [X] T1: Report on planning and resources
-        GGE has calculated the general effects on planning and resources of the OpPlan. He will prepare a short report 
-        for the board meeting (20180409). The report and underlying spreadsheet will be shared.
-
+//last used: T41
 # current
-  - [X] T4: draft a timeline for closing the pied in The Hague.
   - [.] T7: Follow up after the Data Scopes workshop to organise a shorter internal DI workshop.
   - [.] GDPR inventarisatie
   - [ ] T15: nulmeting enquete
@@ -33,7 +8,7 @@
     - [X] T17: HI: An inventory of ‘anything that requires work’, including hidden obligations @D10.1
     - [X] T16: IISG: An inventory of ‘anything that requires work’, including hidden obligations @D10.1
     - [X] T18: MI: An inventory of ‘anything that requires work’, including hidden obligations @D10.1
-    - [.] T18: BB: An inventory of ‘anything that requires work’, including hidden obligations @D10.1
+    - [.] T33: BB: An inventory of ‘anything that requires work’, including hidden obligations @D10.1
     - [.] Feedback van financien 
           -> projectnrs aanvullen
           -> Overzicht verplichtingen via risico inventarisatie
@@ -43,18 +18,24 @@
   - [.] T10: Organise monthly presentation @D3.1
     - [.] Draaiboek voor de meetings (onder andere wanneer is de inhoud klaar)
     - [X] Datums voor een jaar
-  - T22: Hire product owners
+  - T22: Hire backlog owners @D11.5
     - [X] T23: Draft function profile for backlog owner of Team Text and Team Structured Data.
     - [X] T24: Get HR included in the process
     - [.] T25: Get approval of Board (28 mei)
     - [ ] T26: Invite applicants to apply
     - [ ] T27: Meetings with everyone who appied
     - [ ] T28: Publish decision
+  - T36: Inventory of existing DI products 
+    - [ ] T37: Enter all huygens products
+    - [ ] T38: Enter all meertens products
+    - [ ] T39: Enter all IISG products
+    - [ ] T40: aggregate to a core set of services that can underpin all/most products
+    - [ ] T41: Decide per product whether to archive/package/migrate
   - [ ] T6: Together with GGE mario will draft a general outline for working with volunteers at DI.
   - [ ] T12: Draft list of requirements for migration @D5.1
   - T13: Pick vendor for providing CaaS layour on top of our own IaaS platform @D7.2
-    - [.] T21: create a cost-calculation of the new situation
-    - [.] T22: create an overview of the current costs
+    - [.] T34: create a cost-calculation of the new situation
+    - [.] T35: create an overview of the current costs
   - [.] T19: Draft a first version of the organisation Chart @D4.1
   - [ ] T21: Check if the remote-working guidelines of zapier can be applied to us @D3.4
   - T30: DI launch in september
