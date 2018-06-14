@@ -4,6 +4,8 @@
   - [ ] Indexeren private datasets gaat niet goed op data.huygens.knaw.nl
   - [ ] Refactor ImportStatus and EntryImportStatus (remove extraneous information from ImportStatus).
   - [ ] RDF-dump van WomenWriters maken, t.b.v. deponering bij DANS.
+  - [ ] importeren+mappen dataset 'Leidse studenten tussen 1575 en 1812' (is MS access database)
+  - [ ] do not show edit screen/facet functionality to users who don't have the permissions to do this
 # 2018-04
   - [ ] T045: Migratiegids in data.huygens
   - [.] T104: Be able to browse from one dataset to another
