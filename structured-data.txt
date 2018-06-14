@@ -5,6 +5,7 @@
   - [ ] Refactor ImportStatus and EntryImportStatus (remove extraneous information from ImportStatus).
   - [ ] RDF-dump van WomenWriters maken, t.b.v. deponering bij DANS.
 # 2018-04
+  - [ ] T045: Migratiegids in data.huygens
   - [.] T104: Be able to browse from one dataset to another
   - [X] T101: Import the GBA data of Amstelveen for Rutger
   - [.] T102: Test ingforms scripts
@@ -95,8 +96,7 @@
   ~ [ ] T092: Implementeer boolean facet. (Lodewijk wilde bij 2TBI personen kunnen zien welke personen een connectie hadden met BioPort personen)
   B004: overdracht jauco
     - [ ] T063: overdracht beheerservices Timbuctoo instantie -- password etc.
-    - [ ] T066: overdracht GUI
-  - [ ] T045: Migratiegids in data.huygens
+    - [ ] T066: overdracht GUI 
   T099: GUI polish
     - [ ] T091: add default fulltext config based on the view config
     - [ ] T051: sortering van results? alfabetisch mogelijk? sortering op meerdere velden?
