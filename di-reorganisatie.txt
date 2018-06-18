@@ -53,7 +53,7 @@
     - [ ] D1.5: Periodical reporting and risk assessment of the pipeline (2018/12/01)
     - [ ] D1.6: Installation/adaptation of HuC ERP software to accommodate acquisition management (2019/03/31)
   Communication
-    - [.] D2.1: Communication Plan (2018/06/01)
+    - [.] D2.1: Communication Plan (2018/06/25)
     - [ ] D2.2: Environment for broadcasting of information (HuC Intranet) (2018/12/01)
     - [ ] D2.3: Common chat environment (2018/04/01)
     - [ ] D2.4: Setting up product user panels (2018/09/01)
