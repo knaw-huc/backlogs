@@ -65,7 +65,7 @@
     - [.] D3.1: Organisation of monthly presentations by DI colleagues (2018/05/01)
     - [ ] D3.2: Organisation of periodic presentation/discussion sessions with a guest researcher (2018/06/01)
     - [.] D3.3: Organisation of two excursions (2018/06/01)
-    - [ ] D3.4: Procedures and tooling concerning working from home (2018/05/01)
+    - [ ] D3.4: Procedures and tooling concerning working from home (2018/07/01)
     - [ ] D3.5: Evaluation of the corporate culture, as perceived by DI staff (2018/12/01)
   Governance Structure
     - [ ] D4.1: Organization Chart (2018/07/01)
