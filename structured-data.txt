@@ -5,6 +5,9 @@
   - [ ] import+map dataset 'Leidse studenten tussen 1575 en 1812' (is MS access database)
   - [ ] do not show edit screen/facet functionality to users who don't have the permissions to do this
   - [ ] import+map 'bron'-files of BioPort (xls, already in SURFdrive; needs some thinking on mapping/showing them in dataset)
+# Production blockers
+  - [ ] T108: Demo breekt met upload nieuwe versie Timbuctoo
+          Migratie van oude SummaryProps
 # Production bugs
   - [ ] T113: Indexeren private datasets gaat niet goed op data.huygens.knaw.nl 
 # Technical debt 
@@ -33,8 +36,6 @@
   - [ ] T111: JsonLd staat iri's toe met escape characters bijvoorbeeld: http://resources.huygens.knaw.nl/ingforms/atlantischewereld\\wetgeving. Deze worden echter aangepast door Rdf4J naar http://resources.huygens.knaw.nl/ingforms/atlantischewereld\wetgeving. Dit geeft problemen bij het aanmaken van het GraphQl schema. Hiervoor is een fix gemaakt. Het echte probleem, dat de uri's anders zijn dan het origineel, is hier nog niet mee opgelost.
   B008: 2TBI-demo
     Datasets uploaden, zorgen dat de GUI configurabel genoeg is en eventuele bugs fixen zodat de demo werkt
-    - [ ] T108: Demo breekt met upload nieuwe versie Timbuctoo
-          Migratie van oude SummaryProps
     - [X] T084: Summaryprops automatisch laten terugvallen op well-known predicates (zoals rdfs:label foaf:depiction etc) (misschien configureerbaar?)
     - [X] T020: 2tbi, RAA en bioport importplannetje waarbij bioport id's alignen
     - [X] T021: timbuctoo schema bug die getriggerd wordt door 2tbi data fixen
