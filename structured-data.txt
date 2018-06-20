@@ -5,6 +5,8 @@
   - [ ] import+map dataset 'Leidse studenten tussen 1575 en 1812' (is MS access database)
   - [ ] do not show edit screen/facet functionality to users who don't have the permissions to do this
   - [ ] import+map 'bron'-files of BioPort (xls, already in SURFdrive; needs some thinking on mapping/showing them in dataset)
+  - [ ] Detail view van importstatus heeft een bug
+          In eerste instantie 8 importers, later 2 met exact dezelfde informatie.
 # Production blockers
   - [ ] T108: Demo breekt met upload nieuwe versie Timbuctoo
           Migratie van oude SummaryProps
