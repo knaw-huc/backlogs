@@ -1,4 +1,4 @@
-//current max task number: T114
+//current max task number: T115
 
 uce2a3bf7348ceaed31feb7c9d44618d20f742ba7
 # New
@@ -111,6 +111,7 @@ uce2a3bf7348ceaed31feb7c9d44618d20f742ba7
   T099: GUI polish
     - [ ] T091: add default fulltext config based on the view config
     - [ ] T051: sortering van results? alfabetisch mogelijk? sortering op meerdere velden?
+    - [ ] T115: resultatenlijst geeft 'context' van zoekterm weer
     - [ ] T052: Remove hsid from frontend URI (aka: fix major security leak)
     - [ ] T055: order of facet blocks in view is not the same as configured
     - [ ] T056: possibility to position diffent fields in screen view on horizontal axis (so it seems to be a 'string')
