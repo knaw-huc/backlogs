@@ -1,28 +1,29 @@
-//current max task number: T115
+//current max task number: T121
 
 # New
-  - [ ] RDF-dump of WomenWriters, for deposit at DANS.
-        NOTE van Jauco: Uit de mail herinner ik me dat we json zouden doen, geen RDF. Gaan we toch RDF doen? (vind ik prima, maar dan moeten we zorgen dat de versie historie ook naar PROV-O mapped)
-  - [ ] import+map dataset 'Leidse studenten tussen 1575 en 1812' (is MS access database)
-  - [ ] do not show edit screen/facet functionality to users who don't have the permissions to do this
-  - [ ] import+map 'bron'-files of BioPort (xls, already in SURFdrive; needs some thinking on mapping/showing them in dataset)
-  - [ ] Detail view van importstatus heeft een bug
-        - In eerste instantie 8 importers, later 2 met exact dezelfde informatie.
-  - [ ] Importer heeft een bug. Ik was twee datasets tegelijk aan het uploaden en paste toen de naam van de eerste dataset aan. Dan zie je twee imports lopen (van beide datasets 1) toen de tweede import klaar was ging de 2e log van de eerste dataset ook al importeren. Voordat de eerste log dus klaar was.
+
 # Production blockers
   - [ ] T108: Demo breekt met upload nieuwe versie Timbuctoo
           Migratie van oude SummaryProps
 # Production bugs
   - [ ] T113: Indexeren private datasets gaat niet goed op data.huygens.knaw.nl 
-# Technical debt 
-  - [ ] T114: Refactor ImportStatus and EntryImportStatus (remove extraneous information from ImportStatus).
-# 2018-04
-  - [ ] T045: Migratiegids in data.huygens
-  - [.] T104: Be able to browse from one dataset to another
-  - [X] T101: Import the GBA data of Amstelveen for Rutger
-  - [.] T102: Test ingforms scripts
+  - [ ] T120: Detail view van importstatus heeft een bug
+        - In eerste instantie 8 importers, later 2 met exact dezelfde informatie.
+  - [ ] T121: Importer heeft een bug. Ik was twee datasets tegelijk aan het uploaden en paste toen de naam van de eerste dataset aan. Dan zie je twee imports lopen (van beide datasets 1) toen de tweede import klaar was ging de 2e log van de eerste dataset ook al importeren. Voordat de eerste log dus klaar was. 
   - [>T096] T030: Database sluit na upload en mapping
   - [>T097] T029: Schema geeft meer properties in metadata terug, dan die beschikbaar zijn (owl:sameAs bioport person, het ophalen van unknown via sameAs)
+  
+# Technical debt 
+  - [ ] T114: Refactor ImportStatus and EntryImportStatus (remove extraneous information from ImportStatus).
+
+  B010: Ingforms
+    - [.] T102: Test ingforms scripts
+
+- [.] T104: Be able to browse from one dataset to another
+- [ ] T045: Migratiegids in data.huygens
+  
+
+  
   B009: Timbuctoo stabieler maken
     - [X] T097: Schema bugs fixen en betere testcases maken
     ~ [ ] T093: Bij een union type worden alleen de velden van het eerste type getoond in het 'Facet configuration screen'
@@ -38,35 +39,7 @@
   - [X] T100: IntegratieTests falen als, de build van Timbuctoo te langzaam is
         Dit gebeurd nu vooral op Dockerhub. Leuke bijvangst is dat we nu betere statusmessages kunnen tonen tijdens een import
   - [ ] T111: JsonLd staat iri's toe met escape characters bijvoorbeeld: http://resources.huygens.knaw.nl/ingforms/atlantischewereld\\wetgeving. Deze worden echter aangepast door Rdf4J naar http://resources.huygens.knaw.nl/ingforms/atlantischewereld\wetgeving. Dit geeft problemen bij het aanmaken van het GraphQl schema. Hiervoor is een fix gemaakt. Het echte probleem, dat de uri's anders zijn dan het origineel, is hier nog niet mee opgelost.
-  B008: 2TBI-demo
-    Datasets uploaden, zorgen dat de GUI configurabel genoeg is en eventuele bugs fixen zodat de demo werkt
-    - [X] T084: Summaryprops automatisch laten terugvallen op well-known predicates (zoals rdfs:label foaf:depiction etc) (misschien configureerbaar?)
-    - [X] T020: 2tbi, RAA en bioport importplannetje waarbij bioport id's alignen
-    - [X] T021: timbuctoo schema bug die getriggerd wordt door 2tbi data fixen
-    - [X] T022: View configurator aanpassen zodat we links naar andere entities kunnen maken
-    - [X] T024: Bioport mapping aanpassen en opnieuw runnen
-          subjecturi: http://www.biografischportaal.nl/persoon/{Bioport_id}
-          type: bioportperson
-          zorgen dat bij de import de rdfPrefix niet op example.org staat maar op de anansi prefix
-    - [X] T025: RAA mapping aanpassen en opnieuw runnen
-          subject: gewoon een custom uri
-          http://www.w3.org/2002/07/owl#sameAs {bprURL}
-          type: Ambtsdrager
-          viafurl als anyuri
-          plus officesheld
-          zorgen dat bij de import de rdfPrefix niet op example.org staat maar op de anansi prefix
-    - [X] T026: 2TBI via sed aanpassen en importeren
-          sameas: {bprURL}
-          sed 's|http://schema.org/Person/biografisch_portaal> "\(.*\)"^^<http://schema.org/URL>|http://www.w3.org/2002/07/owl#sameAs> <\1>|'
-    - [X] T027: nieuwe timbuctoo releasen
-    - [X] T041: graphiql mutation om de descriptie (title, provenance, depiction, colophon, namen van de collecties) aan te passen
-    - [X] T023: dataset VOID-description mutation toevoegen
-    - [X] T028: werk documentatie bij
-          - welke datatypen indexeren we als dates, 
-          - hoe kun je checken of je rdf valide is
-          - how to add valid describedBy data (must be rdf+xml in VOID)
-    - [-] T047: 2TBI is het mogelijk gegevens over projectpartners op te nemen op dataset homepage?
-  B007: resourceSync (v2.0)
+    B007: resourceSync (v2.0)
     Make our resourcesync exchange protocol use changelists
 
     - [X] T053: Update ResourceSync spec to allow for separate changelist
@@ -94,7 +67,12 @@
     - [X] T106: How can elasticsearch return a limited amount of buckets for all results in geographic sections of roughly equal geographical size
           https://i.stack.imgur.com/f0T0x.png
           https://developers.google.com/maps/documentation/maps-static/intro
+
 # later
+    - [ ] T119: import+map 'bron'-files of BioPort (xls, already in SURFdrive; needs some thinking on mapping/showing them in dataset)
+    - [ ] T116: RDF-dump of WomenWriters, for deposit at DANS.
+        NOTE van Jauco: Uit de mail herinner ik me dat we json zouden doen, geen RDF. Gaan we toch RDF doen? (vind ik prima, maar dan moeten we zorgen dat de versie historie ook naar PROV-O mapped)
+    - [ ] T117: import+map dataset 'Leidse studenten tussen 1575 en 1812' (is MS access database)
   B005: tabular upload (v3.0)
     Ge-uploade tabulaire data onder een voorspelbare graphql endpoint plaatsen en niet in het overzicht van collecties tonen
 
@@ -119,6 +97,7 @@
     - [ ] T071: from record view a 'back button' to list of results
     - [ ] T078: mee scrollen van facet menubalk bij lange resultaten lijst
     - [ ] T081: view screen config: ingevoerde label zichtbaar (vgl. facet config)
+    - [ ] T118: do not show edit screen/facet functionality to users who don't have the permissions to do this
   - [ ] T057: data-issues in DWC: 
         - year '4242'
         - gender caps
@@ -235,4 +214,35 @@
           > 
           > Budget: € 141.874,-
             -- CLARIAH TP - v1.0.pdf p.15
+
+#Archief
+  B008: 2TBI-demo
+    Datasets uploaden, zorgen dat de GUI configurabel genoeg is en eventuele bugs fixen zodat de demo werkt
+    - [X] T084: Summaryprops automatisch laten terugvallen op well-known predicates (zoals rdfs:label foaf:depiction etc) (misschien configureerbaar?)
+    - [X] T020: 2tbi, RAA en bioport importplannetje waarbij bioport id's alignen
+    - [X] T021: timbuctoo schema bug die getriggerd wordt door 2tbi data fixen
+    - [X] T022: View configurator aanpassen zodat we links naar andere entities kunnen maken
+    - [X] T024: Bioport mapping aanpassen en opnieuw runnen
+          subjecturi: http://www.biografischportaal.nl/persoon/{Bioport_id}
+          type: bioportperson
+          zorgen dat bij de import de rdfPrefix niet op example.org staat maar op de anansi prefix
+    - [X] T025: RAA mapping aanpassen en opnieuw runnen
+          subject: gewoon een custom uri
+          http://www.w3.org/2002/07/owl#sameAs {bprURL}
+          type: Ambtsdrager
+          viafurl als anyuri
+          plus officesheld
+          zorgen dat bij de import de rdfPrefix niet op example.org staat maar op de anansi prefix
+    - [X] T026: 2TBI via sed aanpassen en importeren
+          sameas: {bprURL}
+          sed 's|http://schema.org/Person/biografisch_portaal> "\(.*\)"^^<http://schema.org/URL>|http://www.w3.org/2002/07/owl#sameAs> <\1>|'
+    - [X] T027: nieuwe timbuctoo releasen
+    - [X] T041: graphiql mutation om de descriptie (title, provenance, depiction, colophon, namen van de collecties) aan te passen
+    - [X] T023: dataset VOID-description mutation toevoegen
+    - [X] T028: werk documentatie bij
+          - welke datatypen indexeren we als dates, 
+          - hoe kun je checken of je rdf valide is
+          - how to add valid describedBy data (must be rdf+xml in VOID)
+    - [-] T047: 2TBI is het mogelijk gegevens over projectpartners op te nemen op dataset homepage?
+ - [X] T101: Import the GBA data of Amstelveen for Rutger
 
