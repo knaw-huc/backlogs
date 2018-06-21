@@ -1,6 +1,5 @@
 //current max task number: T115
 
-uce2a3bf7348ceaed31feb7c9d44618d20f742ba7
 # New
   - [ ] RDF-dump of WomenWriters, for deposit at DANS.
         NOTE van Jauco: Uit de mail herinner ik me dat we json zouden doen, geen RDF. Gaan we toch RDF doen? (vind ik prima, maar dan moeten we zorgen dat de versie historie ook naar PROV-O mapped)
