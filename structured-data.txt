@@ -7,7 +7,10 @@
   - [ ] Asynchroon rdf uploaden lijkt problemen tegeven bij updaten van index.
           De trigger wordt te vroeg uitgevoerd
   - [ ] herindexeren WomenWriters @SANDS-320
-          De Viitanen zijn gewijzigd maar verschijnen nog als zoekresultaat
+          De Viitanen-records zijn gewijzigd maar verschijnen nog als zoekresultaat
+  - [ ] toevoegen (extra) data aan anansi/2TB: 
+   https://mutations.nodegoat.ugent.be/.well-known/resourcesync/TIC2/capabilitylist.xml
+
 # Production blockers
   - [ ] T108: Demo breekt met upload nieuwe versie Timbuctoo
           Migratie van oude SummaryProps
