@@ -6,6 +6,8 @@
           We kunnen nu de "oude" datasets niet meer importeren via resourcesync.
   - [ ] Asynchroon rdf uploaden lijkt problemen tegeven bij updaten van index.
           De trigger wordt te vroeg uitgevoerd
+  - [ ] herindexeren WomenWriters @SANDS-320
+          De Viitanen zijn gewijzigd maar verschijnen nog als zoekresultaat
 # Production blockers
   - [ ] T108: Demo breekt met upload nieuwe versie Timbuctoo
           Migratie van oude SummaryProps
