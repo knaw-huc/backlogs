@@ -4,6 +4,8 @@
   - [ ] Make it possible to create handles (permanent URI's for entities.
   - [ ] Willen we ook alle bestanden uit een resourcelist kunnen importeren?
           We kunnen nu de "oude" datasets niet meer importeren via resourcesync.
+  - [ ] Asynchroon rdf uploaden lijkt problemen tegeven bij updaten van index.
+          De trigger wordt te vroeg uitgevoerd
 # Production blockers
   - [ ] T108: Demo breekt met upload nieuwe versie Timbuctoo
           Migratie van oude SummaryProps
