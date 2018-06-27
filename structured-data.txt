@@ -4,7 +4,7 @@
   
 
 # Production blockers
-  - [ ] T108: Demo breekt met upload nieuwe versie Timbuctoo
+  - [X] T108: Demo breekt met upload nieuwe versie Timbuctoo
           Migratie van oude SummaryProps
 # Production bugs
   - [ ] T113: Indexeren private datasets gaat niet goed op data.huygens.knaw.nl 
