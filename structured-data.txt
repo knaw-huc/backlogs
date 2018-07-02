@@ -22,6 +22,8 @@
   - [>T097] T029: Schema geeft meer properties in metadata terug, dan die beschikbaar zijn (owl:sameAs bioport person, het ophalen van unknown via sameAs)
   - [ ] T123: Asynchroon rdf uploaden lijkt problemen tegeven bij updaten van index.
           De trigger wordt te vroeg uitgevoerd
+          Dit zou best wel eens hetzelfde probleem als T113. 
+          Als de gebruiker (indexer is ook een Timbuctoo gebruiker) geen rechten heeft op een dataset lijkt het alsof de dataset nog niet bestaat. Deze issue opnieuwe controleren na release van Timbuctoo.
 
   B010: Ingforms
     - [.] T102: Test ingforms scripts
