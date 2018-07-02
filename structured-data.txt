@@ -9,12 +9,12 @@
           Migratie van oude SummaryProps
 # Production bugs
   - [ ] T113: Indexeren private datasets gaat niet goed op data.huygens.knaw.nl
-          - Code aangepast, moet getest worden met een release.
+          Code aangepast, moet getest worden met een release.
   - [ ] T124: herindexeren WomenWriters @SANDS-320
           De Viitanen-records zijn gewijzigd maar verschijnen nog als zoekresultaat
           Het probleem is een corrupte database. Timbuctoo geeft twee keer de verkeerde Viitanen (http://resources.huygens.knaw.nl    /womenwriters/vre/persons/4443aaac-76bc-4484-97ed-36a637957469) terug. De eerste keer is het de juiste versie. De tweede keer is het een oudere versie uit september 2017.
 
-We kunnen het probleem fixen door een wijziging te doen in de graafdatabase. We kunnen ook Women Writers converteren naar rdf en hem verder laten werken met de nieuwe Timbuctoo.
+          We kunnen het probleem fixen door een wijziging te doen in de graafdatabase. We kunnen ook Women Writers converteren naar rdf en hem verder laten werken met de nieuwe Timbuctoo.
   - [ ] T120: Detail view van importstatus heeft een bug
         - In eerste instantie 8 importers, later 2 met exact dezelfde informatie.
   - [ ] T121: Importer heeft een bug. Ik was twee datasets tegelijk aan het uploaden en paste toen de naam van de eerste dataset aan. Dan zie je twee imports lopen (van beide datasets 1) toen de tweede import klaar was ging de 2e log van de eerste dataset ook al importeren. Voordat de eerste log dus klaar was. 
