@@ -8,7 +8,8 @@
   - [X] T108: Demo breekt met upload nieuwe versie Timbuctoo
           Migratie van oude SummaryProps
 # Production bugs
-  - [ ] T113: Indexeren private datasets gaat niet goed op data.huygens.knaw.nl 
+  - [ ] T113: Indexeren private datasets gaat niet goed op data.huygens.knaw.nl
+          - Code aangepast, moet getest worden met een release.
   - [ ] T124: herindexeren WomenWriters @SANDS-320
           De Viitanen-records zijn gewijzigd maar verschijnen nog als zoekresultaat
           Het probleem is een corrupte database. Timbuctoo geeft twee keer de verkeerde Viitanen (http://resources.huygens.knaw.nl    /womenwriters/vre/persons/4443aaac-76bc-4484-97ed-36a637957469) terug. De eerste keer is het de juiste versie. De tweede keer is het een oudere versie uit september 2017.
