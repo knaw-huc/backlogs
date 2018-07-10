@@ -5,8 +5,6 @@
   - [ ] T127: Elasticsearch 6.3.0 complains about multiple types with the indexing of 2TBI
           We now use elasticsearch 5.6.5, so we only run into problems when updating it.
   - [ ] T128: Refactor ResourceSync code to have only one set of DTOs (currently two in "xml" and "download")
-  - [ ] T129: Resourcesync documentation
-  - [ ] T130: Resourcesync resourcelist expose only dataset.nq
 # Production blockers
   - [X] T108: Demo breekt met upload nieuwe versie Timbuctoo
           Migratie van oude SummaryProps
@@ -263,4 +261,6 @@
           - how to add valid describedBy data (must be rdf+xml in VOID)
     - [-] T047: 2TBI is het mogelijk gegevens over projectpartners op te nemen op dataset homepage?
  - [X] T101: Import the GBA data of Amstelveen for Rutger
+ - [X] T129: Resourcesync documentation
+ - [X] T130: Resourcesync resourcelist expose only dataset.nq
 
