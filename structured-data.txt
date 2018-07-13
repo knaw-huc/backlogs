@@ -1,4 +1,4 @@
-//current max task number: T132
+//current max task number: T133
 
 # New
   - [ ] T126: Make it possible to import data from multiple resourcesync sources
@@ -7,6 +7,7 @@
   - [ ] T128: Refactor ResourceSync code to have only one set of DTOs (currently two in "xml" and "download")
   - [ ] T131: test-import https://github.com/culturesofknowledge/emplaces/blob/master/src/coredataextractor/Opole_extracted_data.ttl @EMLO
   - [ ] T132: assess whether the two xlsx-files in EM-PPD/Places/Silesia_sample_data are propperly structured (enough) to import into Timbuctoo @EMLO
+  - [ ] T133: Migrate Timbuctoo to Java 11. (September 2018, max December 2018)
   
 # Production blockers
   
