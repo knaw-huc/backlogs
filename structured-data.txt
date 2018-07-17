@@ -1,18 +1,14 @@
-//current max task number: T133
+//current max task number: T134
 
 # New
-  - [ ] T126: Make it possible to import data from multiple resourcesync sources
-  - [ ] T127: Elasticsearch 6.3.0 complains about multiple types with the indexing of 2TBI
-          We now use elasticsearch 5.6.5, so we only run into problems when updating it.
-  - [ ] T128: Refactor ResourceSync code to have only one set of DTOs (currently two in "xml" and "download")
   - [ ] T131: test-import https://github.com/culturesofknowledge/emplaces/blob/master/src/coredataextractor/Opole_extracted_data.ttl @EMLO
   - [ ] T132: assess whether the two xlsx-files in EM-PPD/Places/Silesia_sample_data are propperly structured (enough) to import into Timbuctoo @EMLO
-  - [ ] T133: Migrate Timbuctoo to Java 11. (September 2018, max December 2018)
-  
+  - [ ] T134: New import Node Goat does not import all information, look into the resourcesync docs if their current changelist is valid. 
+          If it is valid make sure it imports all data.
 # Production blockers
   
 # Production bugs
-  - [ ] T113: Indexeren private datasets gaat niet goed op data.huygens.knaw.nl
+  - [X] T113: Indexeren private datasets gaat niet goed op data.huygens.knaw.nl
           Code aangepast, moet getest worden met een release.
   - [ ] T120: Detail view van importstatus heeft een bug
         - In eerste instantie 8 importers, later 2 met exact dezelfde informatie.
@@ -32,7 +28,7 @@
   
 
 # data import
-- [ ] T125: toevoegen (extra) data aan anansi/2TB: 
+- [.] T125: toevoegen (extra) data aan anansi/2TB: 
    https://mutations.nodegoat.ugent.be/.well-known/resourcesync/TIC2/capabilitylist.xml
 
 # Technical debt 
@@ -82,6 +78,11 @@
           https://i.stack.imgur.com/f0T0x.png
           https://developers.google.com/maps/documentation/maps-static/intro
 # later
+  - [ ] T133: Migrate Timbuctoo to Java 11. (September 2018, max December 2018)
+  - [ ] T126: Make it possible to import data from multiple resourcesync sources
+  - [ ] T127: Elasticsearch 6.3.0 complains about multiple types with the indexing of 2TBI
+          We now use elasticsearch 5.6.5, so we only run into problems when updating it.
+  - [ ] T128: Refactor ResourceSync code to have only one set of DTOs (currently two in "xml" and "download")
     - [ ] T122: Make it possible to create handles (permanent URI's for entities). @EmPlaces
     - [ ] T119: import+map 'bron'-files of BioPort (xls, already in SURFdrive; needs some thinking on mapping/showing them in dataset)
     - [ ] T116: RDF-dump of WomenWriters, for deposit at DANS.
