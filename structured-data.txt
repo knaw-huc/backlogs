@@ -1,10 +1,11 @@
-//current max task number: T134
+//current max task number: T135
 
 # New
   - [ ] T131: test-import https://github.com/culturesofknowledge/emplaces/blob/master/src/coredataextractor/Opole_extracted_data.ttl @EMLO
   - [ ] T132: assess whether the two xlsx-files in EM-PPD/Places/Silesia_sample_data are propperly structured (enough) to import into Timbuctoo @EMLO
   - [ ] T134: New import Node Goat does not import all information, look into the resourcesync docs if their current changelist is valid. 
           If it is valid make sure it imports all data.
+  - [ ] T135: Type van value type teruggeven in het schema
 # Production blockers
   
 # Production bugs
@@ -12,7 +13,7 @@
           Code aangepast, moet getest worden met een release.
   - [ ] T120: Detail view van importstatus heeft een bug
         - In eerste instantie 8 importers, later 2 met exact dezelfde informatie.
-  - [ ] T121: Importer heeft een bug. Ik was twee datasets tegelijk aan het uploaden en paste toen de naam van de eerste dataset aan. Dan zie je twee imports lopen (van beide datasets 1) toen de tweede import klaar was ging de 2e log van de eerste dataset ook al importeren. Voordat de eerste log dus klaar was. 
+  - [.] T121: Importer heeft een bug. Ik was twee datasets tegelijk aan het uploaden en paste toen de naam van de eerste dataset aan. Dan zie je twee imports lopen (van beide datasets 1) toen de tweede import klaar was ging de 2e log van de eerste dataset ook al importeren. Voordat de eerste log dus klaar was. 
   - [>T096] T030: Database sluit na upload en mapping
   - [>T097] T029: Schema geeft meer properties in metadata terug, dan die beschikbaar zijn (owl:sameAs bioport person, het ophalen van unknown via sameAs)
   - [X] T123: Asynchroon rdf uploaden lijkt problemen tegeven bij updaten van index.
