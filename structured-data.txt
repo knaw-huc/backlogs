@@ -80,7 +80,7 @@
           https://developers.google.com/maps/documentation/maps-static/intro
 # later
   - [ ] T133: Migrate Timbuctoo to Java 11. (September 2018, max December 2018)
-  - [ ] T126: Make it possible to import data from multiple resourcesync sources
+  - [ ] T126: Make it possible to import data from multiple resourcesync sources (Merge datasets)
   - [ ] T127: Elasticsearch 6.3.0 complains about multiple types with the indexing of 2TBI
           We now use elasticsearch 5.6.5, so we only run into problems when updating it.
   - [ ] T128: Refactor ResourceSync code to have only one set of DTOs (currently two in "xml" and "download")
@@ -179,7 +179,7 @@
             -- https://trello.com/c/jfR5PMmk/76
 
   Anansi ("Gertjan Filarski" <gertjan.filarski@huygens.knaw.nl>)
-    - [ ] CL_RdfIngest (2018-12-31)
+    - [X] CL_RdfIngest (2018-12-31)
       We adapt timbuctoo to allow for RDF ingests and map the RDF to a graphql schema that allows for path walking.
 
       And some other ingelogd
