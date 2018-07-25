@@ -23,11 +23,11 @@
   B010: Ingforms
     - [.] T102: Test ingforms scripts
 
-- [.] T104: Be able to browse from one dataset to another
-- [ ] T045: Migratiegids in data.huygens
+  - [.] T104: Be able to browse from one dataset to another
+  - [ ] T045: Migratiegids in data.huygens
   
 
-#EMLO - Oxford; consisting of three large chunks EMpeople, EMplaces, EMdates + some generic work
+#EMLO (Oxford); consisting of three large chunks EMpeople, EMplaces, EMdates + some generic work
     
   B012: EMpeople; A configured dataset in timbuctoo for people data
 
@@ -35,14 +35,14 @@
       - [X] T131: test-import https://github.com/culturesofknowledge/emplaces/blob/master/src/coredataextractor/Opole_extracted_data.ttl
       - [ ] T132: assess whether the two xlsx-files in EM-PPD/Places/Silesia_sample_data are propperly structured (enough) to import into Timbuctoo @EMLO
 
-      - [ ] EmPeripleoApi; Implement the peripleo API to provide data from the timbuctoo instance
+      - [ ] EmPeripleoApi; implement the peripleo API to provide data from the Timbuctoo instance; Oxford has to make decision
     
-  B014: EMdates; A webapi + app for converting dates that uses data from EM collections in Timbuctoo; first version built by Hayco
-   - [ ] integrate into EMplaces
+  B014: EMdates; webapi + app for converting dates that uses data from EM collections in Timbuctoo; 1st version built by Hayco
+      - [ ] integrate into EMplaces
 
  - [ ] EmAuth (2018-04-04)
 	Allow login integration with their systems 
- - [ ] EMtinyurl
+ - [ ] T136: EMtinyurl / alternative to handle-service
       Generate short, persistent, somewhat readable uri's for citation of entities
           
           > - they refer to entries. Not search results
