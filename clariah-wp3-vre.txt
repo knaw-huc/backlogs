@@ -32,12 +32,15 @@
   F003: basic services @M9
     - [ ] T012: Folia Tools (FLAT)
     - [.] T013: Frog
-  F005: support viewers
-    - [ ] T016: basic setup using a viewer for text as an example
+  F005: support viewers/editors
+    - [.] T016: basic setup using a viewer for text as an example
+    - [ ] T017: XSLT recipe using the simple FOLIA viewer as an example
+    - [ ] T018: editor workflow using the FLAT FOLIA editor as an example
 
 # later
   - [ ] E001: investigate the use of WebDAV locking instead of file system "locking"
   - [ ] E002: investigate switch from OwnCloud to NextCloud
+  - [ ] E003: focus on error logging (on different levels)
   F004: interactive services @M12ev
     - [ ] T014: Gretel
     - [ ] T015: PaQu
