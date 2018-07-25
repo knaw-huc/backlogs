@@ -4,7 +4,11 @@
 // - [X] done item
 // - [-] cancelled item
 
-// Max T 017
+// Max
+// - T(ask)        018
+// - B(ug)         002
+// - F(eature)     005
+// - E(nhancement) 003
 
 # 2018-07
   B001: fix demo
