@@ -1,11 +1,11 @@
 //current max task number: T135
 
 # New
-  - [X] T131: test-import https://github.com/culturesofknowledge/emplaces/blob/master/src/coredataextractor/Opole_extracted_data.ttl @EMLO
   - [ ] T132: assess whether the two xlsx-files in EM-PPD/Places/Silesia_sample_data are propperly structured (enough) to import into Timbuctoo @EMLO
   - [ ] T134: New import Node Goat does not import all information, look into the resourcesync docs if their current changelist is valid. 
           If it is valid make sure it imports all data.
   - [ ] T135: Type van value type teruggeven in het schema
+
 # Production blockers
   
 # Production bugs
@@ -28,8 +28,34 @@
 - [ ] T045: Migratiegids in data.huygens
   
 
+#EMLO - Oxford; consisting of three large chunks EMpeople, EMplaces, EMdates + some generic work
+    
+  B012: EMpeople; A configured dataset in timbuctoo for people data
+
+  B013: EMplaces; A configured dataset in timbuctoo for place data
+        - [X] T131: test-import https://github.com/culturesofknowledge/emplaces/blob/master/src/coredataextractor/Opole_extracted_data.ttl
+      - [ ] EmPeripleoApi; Implement the peripleo API to provide data from the timbuctoo instance
+    
+  B014: EMdates; A webapi + app for converting dates that uses data from EM collections in Timbuctoo; first version built by Hayco
+   - [ ] integrate into EMplaces
+
+ - [ ] EmAuth (2018-04-04)
+	Allow login integration with their systems 
+ - [ ] EMtinyurl
+      Generate short, persistent, somewhat readable uri's for citation of entities
+          
+          > - they refer to entries. Not search results
+          > - We could implement it as a URI shortener
+          > - we should handle the case where two entries are merged
+          > - These are the public uri's that redirect you to the view details page of the entity
+	
+   ~ [ ] EmBugreports
+      Handling data bugreports or data submissions
+
+
+
 # data import
-- [.] T125: toevoegen (extra) data aan anansi/2TB: 
+  - [.] T125: toevoegen (extra) data aan anansi/2TB: 
    https://mutations.nodegoat.ugent.be/.well-known/resourcesync/TIC2/capabilitylist.xml
 
 # Technical debt 
@@ -151,32 +177,6 @@
   - [ ] T110: Core Trust Seal (fka Data Seal of Approval) for data.huygens and anansi.clariah
 
 # projects
-
-#EMLO - Oxford; consisting of three large chunks EMpeople, EMplaces, EMdates + some generic work
-    
-  B012: EMpeople; A configured dataset in timbuctoo for people data
-
-  B013: EMplaces; A configured dataset in timbuctoo for place data
-		- [ ] EmPeripleoApi
-      		Implement the peripleo API to provide data from the timbuctoo instance
-    
-  B014: EMdates; A webapi + app for converting dates that uses data from EM collections in Timbuctoo; first version built by Hayco
-   	- [ ] integrate into EMplaces
-
- 	- [ ] EmAuth (2018-04-04)
-	Allow login integration with their systems    
-    
-    - [ ] EMtinyurl
-      Generate short, persistent, somewhat readable uri's for citation of entities
-          
-          > - they refer to entries. Not search results
-          > - We could implement it as a URI shortener
-          > - we should handle the case where two entries are merged
-          > - These are the public uri's that redirect you to the view details page of the entity
-	
-	~ [ ] EmBugreports
-      Handling data bugreports or data submissions
-
 
   Anansi ("Gertjan Filarski" <gertjan.filarski@huygens.knaw.nl>)
     - [X] CL_RdfIngest (2018-12-31)
