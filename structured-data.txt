@@ -1,7 +1,7 @@
 //current max task number: T135
 
 # New
-    - [ ] T134: New import Node Goat does not import all information, look into the resourcesync docs if their current changelist is valid. 
+   - [ ] T134: New import Node Goat does not import all information, look into the resourcesync docs if their current changelist is valid. 
           If it is valid make sure it imports all data.
   - [ ] T135: Type van value type teruggeven in het schema
 
@@ -77,6 +77,7 @@
   - [X] T100: IntegratieTests falen als, de build van Timbuctoo te langzaam is
         Dit gebeurd nu vooral op Dockerhub. Leuke bijvangst is dat we nu betere statusmessages kunnen tonen tijdens een import
   - [ ] T111: JsonLd staat iri's toe met escape characters bijvoorbeeld: http://resources.huygens.knaw.nl/ingforms/atlantischewereld\\wetgeving. Deze worden echter aangepast door Rdf4J naar http://resources.huygens.knaw.nl/ingforms/atlantischewereld\wetgeving. Dit geeft problemen bij het aanmaken van het GraphQl schema. Hiervoor is een fix gemaakt. Het echte probleem, dat de uri's anders zijn dan het origineel, is hier nog niet mee opgelost.
+    
     B007: resourceSync (v2.0)
     Make our resourcesync exchange protocol use changelists
 
