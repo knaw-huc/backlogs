@@ -6,8 +6,8 @@
 
 // Max
 // - T(ask)        018
-// - B(ug)         002
-// - F(eature)     005
+// - B(ug)         001
+// - F(eature)     006
 // - E(nhancement) 003
 
 # 2018-07
@@ -23,7 +23,7 @@
   - [ ] T005: retrieve provenance info from (CLAM) services @CLARIAH_prov_workshop
   - [ ] T016: deploy docker service (experiment)
   - [.] T017: enable Shibboleth as login
-  B002: Kafka-based provenance
+  F006: Kafka-based provenance
   - [.] T003: create W3C PROV from the Kafka log + VRE registries @CLARIAH prov workshop
   F001: support metadata @M6
   - [ ] T006: ingest metadata and associate it with resources @M6
