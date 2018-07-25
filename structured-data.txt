@@ -1,8 +1,7 @@
 //current max task number: T135
 
 # New
-  - [ ] T132: assess whether the two xlsx-files in EM-PPD/Places/Silesia_sample_data are propperly structured (enough) to import into Timbuctoo @EMLO
-  - [ ] T134: New import Node Goat does not import all information, look into the resourcesync docs if their current changelist is valid. 
+    - [ ] T134: New import Node Goat does not import all information, look into the resourcesync docs if their current changelist is valid. 
           If it is valid make sure it imports all data.
   - [ ] T135: Type van value type teruggeven in het schema
 
@@ -33,7 +32,9 @@
   B012: EMpeople; A configured dataset in timbuctoo for people data
 
   B013: EMplaces; A configured dataset in timbuctoo for place data
-        - [X] T131: test-import https://github.com/culturesofknowledge/emplaces/blob/master/src/coredataextractor/Opole_extracted_data.ttl
+      - [X] T131: test-import https://github.com/culturesofknowledge/emplaces/blob/master/src/coredataextractor/Opole_extracted_data.ttl
+      - [ ] T132: assess whether the two xlsx-files in EM-PPD/Places/Silesia_sample_data are propperly structured (enough) to import into Timbuctoo @EMLO
+
       - [ ] EmPeripleoApi; Implement the peripleo API to provide data from the timbuctoo instance
     
   B014: EMdates; A webapi + app for converting dates that uses data from EM collections in Timbuctoo; first version built by Hayco
