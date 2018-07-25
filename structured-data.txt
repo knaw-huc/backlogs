@@ -149,34 +149,34 @@
         pom files and would still allow maven builds
   - [ ] T109: volgorde van data behouden/modellen, bijv. lijst van auteurs bij een publicatie @Rutger
   - [ ] T110: Core Trust Seal (fka Data Seal of Approval) for data.huygens and anansi.clariah
+
 # projects
-  Emlo ("Arno Bosse" <arno.bosse@oxford.edu.uk>)
-    - [ ] EmAuth (2018-04-04)
-      Allow login integration with their systems
 
-    - [ ] EmDates
-      A webapi + app for converting dates that uses data from EM collections in timbuctoo
+#EMLO - Oxford; consisting of three large chunks EMpeople, EMplaces, EMdates + some generic work
+    
+  B012: EMpeople; A configured dataset in timbuctoo for people data
 
-    - [ ] EmPlaces
-      A configured dataset in timbuctoo for place data
+  B013: EMplaces; A configured dataset in timbuctoo for place data
+		- [ ] EmPeripleoApi
+      		Implement the peripleo API to provide data from the timbuctoo instance
+    
+  B014: EMdates; A webapi + app for converting dates that uses data from EM collections in Timbuctoo; first version built by Hayco
+   	- [ ] integrate into EMplaces
 
-    - [ ] EmPeople
-      A configured dataset in timbuctoo for people data
-
-    - [ ] EmPeripleoApi
-      Implement the peripleo API to provide data from the timbuctoo instance
-
-    - [ ] EmBugreports
-      Handling data bugreports or data submissions
-
-    - [ ] EmTinyurl
+ 	- [ ] EmAuth (2018-04-04)
+	Allow login integration with their systems    
+    
+    - [ ] EMtinyurl
       Generate short, persistent, somewhat readable uri's for citation of entities
           
           > - they refer to entries. Not search results
           > - We could implement it as a URI shortener
           > - we should handle the case where two entries are merged
           > - These are the public uri's that redirect you to the view details page of the entity
-            -- https://trello.com/c/jfR5PMmk/76
+	
+	~ [ ] EmBugreports
+      Handling data bugreports or data submissions
+
 
   Anansi ("Gertjan Filarski" <gertjan.filarski@huygens.knaw.nl>)
     - [X] CL_RdfIngest (2018-12-31)
