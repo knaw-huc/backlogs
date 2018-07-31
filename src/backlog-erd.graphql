@@ -1,0 +1,108 @@
+schema {
+  query: DataModels
+}
+
+type DataModels {
+  Backlog: Backlog
+  ProjectBrief: ProjectBrief
+}
+
+type Backlog {
+  id: ID!
+  title: String!
+  features: [Feature!]!
+}
+
+type Feature {
+  id: ID!
+  title: String!
+  description: String!
+  definition_of_done: String!
+  isReviewed: Boolean! # indicates whether this feature was already triaged by the product owner
+  tasks: [Task!]!
+  plannedStart: Date
+  plannedEnd: Date
+  __effective_deadline: Date # An effective deadline based on the earliest deadline from the deliverables that are linked to this feature. This deadline is calculated
+  __effective_budget: Int! # An effective budget based on the combined budgets of the solutions of the transacted projects that depend on this Feature
+  
+  #optionally we might also want to specify a loose relation to other features that are best done close to each other in time. E.g. features relating to the same subsystem
+}
+
+type Task {
+  id: ID!
+  title: String!
+  description: String!
+  time_spent: Int!
+  budget: [TaskBudget!]! # defined by the product owner
+  estimate: Int # (optionally, for the team’s own report only) An estimation of how long the task will take
+  state: TaskState!
+  
+  # There is an important characteristic in software projects where the problem becomes bigger while working on it because it becomes more detailed (see https://www.quora.com/Why-are-software-development-task-estimations-regularly-off-by-a-factor-of-2-3/answer/Michael-Wolfe)
+  # I'd like to make that effect a first class citizen in the backlogs so it can be seen and acted upon
+}
+
+enum TaskState {
+  OPEN # no work started
+  IN_WORK # some, but not all work done
+  CLOSED # all work done
+  CLEANED # e.g. because you merged two issues or because there was a duplicate
+  CANCELLED # closed because the project has changed direction and this task is no longer required
+}
+
+type ProjectBrief {
+  id: ID!
+  goal: String! # What the the project is trying to achieve written down in such a way that it provides context for the development team
+  deliverables: [Deliverable!]!
+  state: ProjectState!
+}
+
+enum ProjectState {
+  Submitted
+	Transacted
+  # etc...
+}
+
+type SolutionProposal {
+  feature: Feature
+  budgetShare: Int!
+  description: String! # A description on how the feature will contribute to one or more of the deliverables. 
+  budget: Int! # A budget assigned to the feature and the deliverable it should count towards, based on the estimate, but might differ
+  estimate: Int! # An estimation as made by the development team
+}
+
+type Deliverable {
+  id: ID!
+  title: String!
+  description: String! #Description that details the domain effect that this deliverable must achieve (not the implementation approach). It should also list the constraints such as "The funder requires us to use PHP" or "We may not use outside hires for this"
+  deadline: Date!
+  currentSolutionProposal: [SolutionProposal!]! # All deliverables must be solved by their list of solutions. If needed new features are added to the backlog just for this project.
+  logs: [DeliverableUpdate!]!
+  __effective_budget: Int! # An effective budget based on the combined budgets of the solutionsProposals
+}
+
+type DeliverableUpdate {
+  date: Date!
+  hillChartValue: Int!
+  clarification: String!
+}
+
+scalar Date
+
+type FeatureBudget {
+  id: ID
+}
+
+type TaskBudget {
+  id: ID!
+  source: DeliverableOrNonProjectBudget
+  size: Int!
+}
+
+union DeliverableOrNonProjectBudget = Deliverable | NonProjectBudget
+
+type NonProjectBudget {
+  Id: ID!
+  title: String!
+  size: Int!
+}
+
