@@ -64,10 +64,9 @@ enum ProjectState {
 
 type SolutionProposal {
   feature: Feature
-  budgetShare: Int!
-  description: String! # A description on how the feature will contribute to one or more of the deliverables. 
-  budget: Int! # A budget assigned to the feature and the deliverable it should count towards, based on the estimate, but might differ
-  estimate: Int! # An estimation as made by the development team
+  description: String! # A description on how the feature will contribute to one this deliverable
+  estimate: Int! # An estimate of the work required to build the feature in the context of this deliverable
+  budgetShare: Int! # how much of the deliverable's budget is assigned to the feature
 }
 
 type Deliverable {
@@ -75,6 +74,7 @@ type Deliverable {
   title: String!
   description: String! #Description that details the domain effect that this deliverable must achieve (not the implementation approach). It should also list the constraints such as "The funder requires us to use PHP" or "We may not use outside hires for this"
   deadline: Date!
+  budget: Int! # The budget assigned to the deliverable
   currentSolutionProposal: [SolutionProposal!]! # All deliverables must be solved by their list of solutions. If needed new features are added to the backlog just for this project.
   logs: [DeliverableUpdate!]!
   __effective_budget: Int! # An effective budget based on the combined budgets of the solutionsProposals
