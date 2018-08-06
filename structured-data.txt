@@ -1,9 +1,8 @@
-//current max task number: T136
+//current max task number: T137
 
 # New
-   - [ ] T134: New import Node Goat does not import all information, look into the resourcesync docs if their current changelist is valid. 
-          If it is valid make sure it imports all data.
-  - [ ] T135: Type van value type teruggeven in het schema
+- T137: Reimport Opele dataset
+	When the discussion is completed on https://github.com/culturesofknowledge/emplaces/issues/26
 
 # Production blockers
   
@@ -19,6 +18,11 @@
           De trigger wordt te vroeg uitgevoerd
           Dit zou best wel eens hetzelfde probleem als T113. 
           Als de gebruiker (indexer is ook een Timbuctoo gebruiker) geen rechten heeft op een dataset lijkt het alsof de dataset nog niet bestaat. Deze issue opnieuwe controleren na release van Timbuctoo.
+  - [ ] T134: New import Node Goat does not import all information, look into the resourcesync docs if their current changelist is valid. 
+          If it is valid make sure it imports all data.
+
+
+  - [ ] T135: Type van value type teruggeven in het schema
 
   B010: Ingforms
     - [.] T102: Test ingforms scripts
