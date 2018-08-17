@@ -1,6 +1,7 @@
-//current max task number: T137
+//current max task number: T138
 
 # New
+- T138: Return 404 when a resourcesync change is requested for an unknown version like 'change99999.nqud' when the last change is 'change2.nqud'
 - T137: Reimport Opele dataset
 	When the discussion is completed on https://github.com/culturesofknowledge/emplaces/issues/26
 
