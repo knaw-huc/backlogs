@@ -1,6 +1,39 @@
-//current max task number: T138
+//current max task number: T139
 
 # New
+- T139: Handle does not work on data.huygens and problably has the same problems on anansi and golden agents
+nl.knaw.huygens.persistence.PersistenceException: HandleException (INTERNAL_ERROR) Error setting up session
+	at nl.knaw.huygens.persistence.HandleManager.persistURL(HandleManager.java:180)
+	at nl.knaw.huygens.timbuctoo.handle.HandleAdder.actualExecution(HandleAdder.java:47)
+	at com.kjetland.dropwizard.activemq.ActiveMQReceiverHandler.processMessage(ActiveMQReceiverHandler.java:122)
+	at com.kjetland.dropwizard.activemq.ActiveMQReceiverHandler.runReceiveLoop(ActiveMQReceiverHandler.java:270)
+	at com.kjetland.dropwizard.activemq.ActiveMQReceiverHandler.run(ActiveMQReceiverHandler.java:203)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: net.handle.hdllib.HandleException: Error setting up session
+	at net.handle.hdllib.HandleResolver.sendRequestToServerByProtocol(HandleResolver.java:1889)
+	at net.handle.hdllib.HandleResolver.sendRequestToServerByProtocol(HandleResolver.java:1818)
+	at net.handle.hdllib.HandleResolver.sendRequestToServerInSiteByProtocol(HandleResolver.java:1649)
+	at net.handle.hdllib.HandleResolver.sendRequestToSite(HandleResolver.java:1627)
+	at net.handle.hdllib.HappyEyeballsResolver.sendRequestToSiteViaProtocol(HappyEyeballsResolver.java:205)
+	at net.handle.hdllib.HappyEyeballsResolver.sendRequestToSites(HappyEyeballsResolver.java:173)
+	at net.handle.hdllib.HappyEyeballsResolver.sendRequestAndSetResponseOrPublicException(HappyEyeballsResolver.java:151)
+	at net.handle.hdllib.HappyEyeballsResolver.run(HappyEyeballsResolver.java:90)
+	at net.handle.hdllib.HandleResolver.sendRequestToService(HandleResolver.java:1165)
+	at net.handle.hdllib.HandleResolver.processRequestGlobally(HandleResolver.java:618)
+	at net.handle.hdllib.HandleResolver.processRequest(HandleResolver.java:590)
+	at net.handle.hdllib.HandleResolver.processRequest(HandleResolver.java:603)
+	at nl.knaw.huygens.persistence.HandleManager.persistURL(HandleManager.java:177)
+	... 5 common frames omitted
+Caused by: java.security.NoSuchAlgorithmException: Unsupported secret key algorithm: AES
+	at com.sun.crypto.provider.DHKeyAgreement.engineGenerateSecret(DHKeyAgreement.java:387)
+	at javax.crypto.KeyAgreement.generateSecret(KeyAgreement.java:648)
+	at net.handle.security.provider.GenericProvider.getKeyFromDH(GenericProvider.java:207)
+	at net.handle.hdllib.HandleResolver.setupSessionWithServer(HandleResolver.java:2207)
+	at net.handle.hdllib.HandleResolver.setupSessionWithServer(HandleResolver.java:2062)
+	at net.handle.hdllib.HandleResolver.setupSessionWithServer(HandleResolver.java:2039)
+	at net.handle.hdllib.HandleResolver.sendRequestToServerByProtocol(HandleResolver.java:1883)
+	... 17 common frames omitted
+
 - T138: Return 404 when a resourcesync change is requested for an unknown version like 'change99999.nqud' when the last change is 'change2.nqud'
 - T137: Reimport Opele dataset
 	When the discussion is completed on https://github.com/culturesofknowledge/emplaces/issues/26
