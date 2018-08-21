@@ -1,7 +1,9 @@
-//current max task number: T140
+//current max task number: T141
 
 # New
-
+- [ ] T141: DatabaseGetter.partialKey() only works with key.startsWith()
+	It cuts of the iterator at the first non-matching value.
+	This currently slows down the retrieval of the resourcesync changes.
 - [ ] T137: Reimport Opele dataset
 	When the discussion is completed on https://github.com/culturesofknowledge/emplaces/issues/26
 - [.] T140: Stardog-server @Golden Agents: size limit
