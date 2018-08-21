@@ -1,9 +1,10 @@
-//current max task number: T139
+//current max task number: T140
 
 # New
 
 - [ ] T137: Reimport Opele dataset
 	When the discussion is completed on https://github.com/culturesofknowledge/emplaces/issues/26
+- [.] T140: Stardog-server @Golden Agents: size limit
 
 # Production blockers
   
@@ -66,7 +67,7 @@ Caused by: java.security.NoSuchAlgorithmException: Unsupported secret key algori
 
   B013: EMplaces; A configured dataset in timbuctoo for place data
       - [X] T131: test-import https://github.com/culturesofknowledge/emplaces/blob/master/src/coredataextractor/Opole_extracted_data.ttl
-      - [ ] T132: assess whether the two xlsx-files in EM-PPD/Places/Silesia_sample_data are propperly structured (enough) to import into Timbuctoo @EMLO
+      - [-] T132: assess whether the two xlsx-files in EM-PPD/Places/Silesia_sample_data are propperly structured (enough) to import into Timbuctoo @EMLO
 
       - [-] EmPeripleoApi; implement the peripleo API to provide data from the Timbuctoo instance; Oxford has to make decision
       - [ ] export as LPIF format (https://github.com/LinkedPasts/linked-places); record based OR/AND via API?
