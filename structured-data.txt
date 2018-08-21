@@ -1,7 +1,23 @@
 //current max task number: T139
 
 # New
-- T139: Handle does not work on data.huygens and problably has the same problems on anansi and golden agents
+
+- [ ] T137: Reimport Opele dataset
+	When the discussion is completed on https://github.com/culturesofknowledge/emplaces/issues/26
+
+# Production blockers
+  
+# Production bugs
+  - [ ] T138: Return 404 when a resourcesync change is requested for an unknown version like 'change99999.nqud' when the last change is 'change2.nqud'
+  - [ ] T120: Detail view van importstatus heeft een bug
+        - In eerste instantie 8 importers, later 2 met exact dezelfde informatie.
+  - [.] T121: Importer heeft een bug. Ik was twee datasets tegelijk aan het uploaden en paste toen de naam van de eerste dataset aan. Dan zie je twee imports lopen (van beide datasets 1) toen de tweede import klaar was ging de 2e log van de eerste dataset ook al importeren. Voordat de eerste log dus klaar was. 
+  - [>T096] T030: Database sluit na upload en mapping
+  - [>T097] T029: Schema geeft meer properties in metadata terug, dan die beschikbaar zijn (owl:sameAs bioport person, het ophalen van unknown via sameAs)
+  - [.] T134: New import Node Goat does not import all information, look into the resourcesync docs if their current changelist is valid. 
+          If it is valid make sure it imports all data.
+
+  - [ ] T139: Handle does not work on data.huygens and problably has the same problems on anansi and golden agents
 nl.knaw.huygens.persistence.PersistenceException: HandleException (INTERNAL_ERROR) Error setting up session
 	at nl.knaw.huygens.persistence.HandleManager.persistURL(HandleManager.java:180)
 	at nl.knaw.huygens.timbuctoo.handle.HandleAdder.actualExecution(HandleAdder.java:47)
@@ -34,29 +50,8 @@ Caused by: java.security.NoSuchAlgorithmException: Unsupported secret key algori
 	at net.handle.hdllib.HandleResolver.sendRequestToServerByProtocol(HandleResolver.java:1883)
 	... 17 common frames omitted
 
-- T138: Return 404 when a resourcesync change is requested for an unknown version like 'change99999.nqud' when the last change is 'change2.nqud'
-- T137: Reimport Opele dataset
-	When the discussion is completed on https://github.com/culturesofknowledge/emplaces/issues/26
 
-# Production blockers
-  
-# Production bugs
-  - [X] T113: Indexeren private datasets gaat niet goed op data.huygens.knaw.nl
-          Code aangepast, moet getest worden met een release.
-  - [ ] T120: Detail view van importstatus heeft een bug
-        - In eerste instantie 8 importers, later 2 met exact dezelfde informatie.
-  - [.] T121: Importer heeft een bug. Ik was twee datasets tegelijk aan het uploaden en paste toen de naam van de eerste dataset aan. Dan zie je twee imports lopen (van beide datasets 1) toen de tweede import klaar was ging de 2e log van de eerste dataset ook al importeren. Voordat de eerste log dus klaar was. 
-  - [>T096] T030: Database sluit na upload en mapping
-  - [>T097] T029: Schema geeft meer properties in metadata terug, dan die beschikbaar zijn (owl:sameAs bioport person, het ophalen van unknown via sameAs)
-  - [X] T123: Asynchroon rdf uploaden lijkt problemen tegeven bij updaten van index.
-          De trigger wordt te vroeg uitgevoerd
-          Dit zou best wel eens hetzelfde probleem als T113. 
-          Als de gebruiker (indexer is ook een Timbuctoo gebruiker) geen rechten heeft op een dataset lijkt het alsof de dataset nog niet bestaat. Deze issue opnieuwe controleren na release van Timbuctoo.
-  - [ ] T134: New import Node Goat does not import all information, look into the resourcesync docs if their current changelist is valid. 
-          If it is valid make sure it imports all data.
-
-
-  - [ ] T135: Type van value type teruggeven in het schema
+ 
 
   B010: Ingforms
     - [.] T102: Test ingforms scripts
@@ -146,6 +141,7 @@ Caused by: java.security.NoSuchAlgorithmException: Unsupported secret key algori
           https://i.stack.imgur.com/f0T0x.png
           https://developers.google.com/maps/documentation/maps-static/intro
 # later
+  - [ ] T135: Type van value type teruggeven in het schema
   - [ ] T133: Migrate Timbuctoo to Java 11. (September 2018, max December 2018)
   - [ ] T126: Make it possible to import data from multiple resourcesync sources (Merge datasets)
   - [ ] T127: Elasticsearch 6.3.0 complains about multiple types with the indexing of 2TBI
@@ -272,7 +268,7 @@ Caused by: java.security.NoSuchAlgorithmException: Unsupported secret key algori
           > Budget: € 141.874,-
             -- CLARIAH TP - v1.0.pdf p.15
 
-#Archief
+#Archive
   - [X] T108: Demo breekt met upload nieuwe versie Timbuctoo
           Migratie van oude SummaryProps
   B008: 2TBI-demo
@@ -308,5 +304,13 @@ Caused by: java.security.NoSuchAlgorithmException: Unsupported secret key algori
  - [X] T130: Resourcesync resourcelist expose only dataset.nq
  - [X] T124: herindexeren WomenWriters @SANDS-320
           De Viitanen-records zijn gewijzigd maar verschijnen nog als zoekresultaat
-          Het probleem is een corrupte database. Timbuctoo geeft twee keer de verkeerde Viitanen (http://resources.huygens.knaw.nl    /womenwriters/vre/persons/4443aaac-76bc-4484-97ed-36a637957469) terug. De eerste keer is het de juiste versie. De tweede keer is het een oudere versie uit september 2017. -- We kunnen het probleem fixen door een wijziging te doen in de graafdatabase. We kunnen ook Women Writers converteren naar rdf en hem verder laten werken met de nieuwe Timbuctoo.
+          Het probleem is een corrupte database. Timbuctoo geeft twee keer de verkeerde Viitanen (http://resources.huygens.knaw.nl    /womenwriters/vre/persons/4443aaac-76bc-4484-97ed-36a637957469) terug. De eerste keer is het de juiste versie. De tweede keer is het een oudere versie uit september 2017. -- We kunnen het probleem fixen door een wijziging te doen in de graafdatabase. We kunnen ook Women Writers converteren naar rdf en hem verder laten werken met de nieuwe Timbuctoo
+ - [X] T113: Indexeren private datasets gaat niet goed op data.huygens.knaw.nl
+          Code aangepast, moet getest worden met een release.
+ - [X] T123: Asynchroon rdf uploaden lijkt problemen tegeven bij updaten van index.
+          De trigger wordt te vroeg uitgevoerd
+          Dit zou best wel eens hetzelfde probleem als T113. 
+          Als de gebruiker (indexer is ook een Timbuctoo gebruiker) geen rechten heeft op een dataset lijkt het alsof de dataset nog niet bestaat. Deze issue opnieuwe controleren na release van Timbuctoo.
+
+
 
