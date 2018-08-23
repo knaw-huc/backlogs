@@ -1,4 +1,4 @@
-//current max task number: T141
+//current max task number: T142
 
 # New
 - [ ] T141: DatabaseGetter.partialKey() only works with key.startsWith()
@@ -72,7 +72,7 @@ Caused by: java.security.NoSuchAlgorithmException: Unsupported secret key algori
       - [-] T132: assess whether the two xlsx-files in EM-PPD/Places/Silesia_sample_data are propperly structured (enough) to import into Timbuctoo @EMLO
 
       - [-] EmPeripleoApi; implement the peripleo API to provide data from the Timbuctoo instance; Oxford has to make decision
-      - [ ] export as LPIF format (https://github.com/LinkedPasts/linked-places); record based OR/AND via API?
+      - [ ] T142: export as LPIF format (https://github.com/LinkedPasts/linked-places); record based OR/AND via API?
     
   B014: EMdates; webapi + app for converting dates that uses data from EM collections in Timbuctoo; 1st version built by Hayco
       - [ ] integrate into EMplaces
