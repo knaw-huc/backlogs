@@ -1,4 +1,4 @@
-//current max task number: T142
+//current max task number: T143
 
 # New
 - [ ] T141: DatabaseGetter.partialKey() only works with key.startsWith()
@@ -53,7 +53,7 @@ Caused by: java.security.NoSuchAlgorithmException: Unsupported secret key algori
 	at net.handle.hdllib.HandleResolver.sendRequestToServerByProtocol(HandleResolver.java:1883)
 	... 17 common frames omitted
 
-
+  - [ ] T143: in config/view screen: delete of (existing) Key-Value tim:hasRow >> blank screen
  
 
   B010: Ingforms
