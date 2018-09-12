@@ -10,7 +10,7 @@
 // - F(eature)     006
 // - E(nhancement) 003
 
-# 2018-07
+# 2018-09
   B001: fix demo
     - [X] deployment should always return JSON
     - [X] deployment status should not depend on remote service, i.e., it is the local state
@@ -22,8 +22,7 @@
   - [ ] T004: create a JSON schema for the parameters document
   - [ ] T005: retrieve provenance info from (CLAM) services @CLARIAH_prov_workshop
   - [ ] T016: deploy docker service (experiment)
-  - [.] T017: enable Shibboleth as login
-  F006: Kafka-based provenance
+  F007: Kafka-based provenance
   - [.] T003: create W3C PROV from the Kafka log + VRE registries @CLARIAH prov workshop
   F001: support metadata @M6
   - [ ] T006: ingest metadata and associate it with resources @M6
@@ -34,27 +33,33 @@
     - [X] T009: resource overview
     - [.] T011: (general) service enable   
   F003: basic services @M9
-    - [ ] T012: Folia Tools (FLAT)
+    - [.] T012: Folia Tools (FLAT)
     - [.] T013: Frog
   F005: support viewers/editors
-    - [.] T016: basic setup using a viewer for text as an example
-    - [ ] T017: XSLT recipe using the simple FOLIA viewer as an example
-    - [ ] T018: editor workflow using the FLAT FOLIA editor as an example
+    - [X] T016: basic setup using a viewer for text as an example
+    - [.] T017: XSLT recipe using the simple FOLIA viewer as an example
+    - [.] T018: editor workflow using the FLAT FOLIA editor as an example
+  F008: support for Single Sign On based on Shibboleth
+    - [ ] T019: investigate switch from OwnCloud to NextCloud
+    - [.] T017: enable Shibboleth as login
+  F009: support for tags
+    - [ ] T020: basic support for (typed) tags
+    - [ ] T021: turn paths into tags
 
 # later
   - [ ] E001: investigate the use of WebDAV locking instead of file system "locking"
-  - [ ] E002: investigate switch from OwnCloud to NextCloud
   - [ ] E003: focus on error logging (on different levels)
+  - [ ] E004: support the specification of workflows
   F004: interactive services @M12ev
     - [ ] T014: Gretel
     - [ ] T015: PaQu
 
-  F005: remote standard corpora @M12ev
+  F006: remote standard corpora @M12ev
 
   - [ ] F001: dream up a nicer name
 # projects
   CLARIAH WP3 VRE ("Daan Broeder" <daan.broeder@di.huc.knaw.nl>)
-    - [ ] CLARIAH_prov_workshop (2018-07)
+    - [ ] CLARIAH_prov_workshop (2018-09-03)
     - [ ] M6 (2018-06)
       Owncloud + resource administration + CMDI search
 
