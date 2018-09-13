@@ -1,6 +1,7 @@
-//current max task number: T143
+//current max task number: T144
 
 # New
+- [ ] T144: Json-LD upload fails through the Timbuctoo-GUI (works with REST)
 - [ ] T141: DatabaseGetter.partialKey() only works with key.startsWith()
 	It cuts of the iterator at the first non-matching value.
 	This currently slows down the retrieval of the resourcesync changes.
