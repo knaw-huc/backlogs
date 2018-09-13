@@ -60,7 +60,7 @@ Caused by: java.security.NoSuchAlgorithmException: Unsupported secret key algori
     - [.] T102: Test ingforms scripts
 
   - [.] T104: Be able to browse from one dataset to another
-  - [ ] T045: Migratiegids in data.huygens
+  - [X] T045: Migratiegids in data.huygens
   
 
 #EMLO (Oxford); consisting of three large chunks EMpeople, EMplaces, EMdates + some generic work
