@@ -1,4 +1,4 @@
-//current max task number: T144
+//current max task number: T146
 
 # New
 - [ ] T144: Json-LD upload fails through the Timbuctoo-GUI (works with REST)
@@ -8,6 +8,12 @@
 - [ ] T137: Reimport Opele dataset
 	When the discussion is completed on https://github.com/culturesofknowledge/emplaces/issues/26
 - [.] T140: Stardog-server @Golden Agents: size limit
+- [ ] T145 (=SANDS-421) onderstaande bericht op homepage van NEWW VRE plaatsen, http://resources.huygens.knaw.nl/womenwriters:
+
+Dear members of the DARIAH-EU Working Group Women Writers in History, and other visitors,
+The NEWW VRE is at present being updated and revised by developers at Huygens-ING. From September 21st up to and including October 31 2018 the VRE is only open for consultation (without password). Data entry and editing of records will start again when the ongoing amendments are finalized. }}{{Any questions can be addressed to one of us: Amelia Sanz (amsanz@ucm.es) and Marie Nedregotten Sørbø (mns@hivolda.no) (Chairs of the WWIH Board). Janouk de Groot (janouk.de.groot@huygens.knaw.nl) (DANS-assistant at Huygens-ING)
+
+- [ ] T146 (=SANDS-420) 
 
 # Production blockers
   
