@@ -1,6 +1,7 @@
-//current max task number: T146
+//current max task number: T147
 
 # New
+- [ ] T147: Investigate why 2TBI dataset.nq upload on September 11th didn't get all data into anansi.
 - [ ] T144: Json-LD upload fails through the Timbuctoo-GUI (works with REST)
 - [ ] T141: DatabaseGetter.partialKey() only works with key.startsWith()
 	It cuts of the iterator at the first non-matching value.
