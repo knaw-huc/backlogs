@@ -60,7 +60,7 @@ Caused by: java.security.NoSuchAlgorithmException: Unsupported secret key algori
  
 
   B010: Ingforms
-    - [.] T102: Test ingforms scripts
+    - [X] T102: Test ingforms scripts
 
   - [.] T104: Be able to browse from one dataset to another
   - [X] T045: Migratiegids in data.huygens
