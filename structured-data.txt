@@ -10,7 +10,7 @@
 - [.] T147: Users, Roles, Permissions >> write design document
 - [ ] T148: research how much time is needed for upgrade to Java 11 [cf. T133]
 - [ ] T149: research into dependencies in Timbuctoo
-- [ ] T150: NEWW VRE - add new attribute/facet 'Status' (value: 'Private' OR 'Public') to Publications and Receptions
+- [ ] T150: NEWW VRE - add new attribute/facet [??tbd]'Status' (value: 'Private' OR 'Public') to Publications and Receptions
 
 # Production blockers
   
