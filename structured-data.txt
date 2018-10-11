@@ -125,12 +125,12 @@ Caused by: java.security.NoSuchAlgorithmException: Unsupported secret key algori
 
     - [X] T053: Update ResourceSync spec to allow for separate changelist
     - [X] T040: Update ResourceSync import code to allow for separate changelist (also check if update works)
-    - [.] T042: Update ResourceSync generation code to provide a Changelist next to the resourcelist
-    - [ ] T044: resourcesync update kunnen triggeren via graphql (dat betekent dat we per dataset moeten gaan bijhouden welke bron rs-url die had)
+    - [X] T042: Update ResourceSync generation code to provide a Changelist next to the resourcelist
+    - [X] T044: resourcesync update kunnen triggeren via graphql (dat betekent dat we per dataset moeten gaan bijhouden welke bron rs-url die had)
           a graphql mutation for launching a resourcesync
           a graphql mutation for triggering an update of a resourcesync dataset
     - [>T044] T088: resourcesync API via graphQL exposen (list data from url and import dataset)
-    - [.] T043: make the resourcesync client able to import password protected resources
+    - [X] T043: make the resourcesync client able to import password protected resources
     - [ ] T107: store the original graph in the TruePatchStore
   B006: rdf_upload (v2.0)
     Allow a user to do an upload throught the GUI
@@ -140,7 +140,7 @@ Caused by: java.security.NoSuchAlgorithmException: Unsupported secret key algori
     ~ [ ] T101: Upload status teruggeven (hoe ver timbuctoo is met uploaden)
     - [ ] T039: andere gebruikers als editor/admin kunnen toevoegen aan je dataset (graphiql)
   B010: Work out how temporal features can be used while querying @EmPlaces @Humigec
-    - [.] T105: Read up on the EMPlaces data model
+    - [X] T105: Read up on the EMPlaces data model
           https://github.com/culturesofknowledge/emplaces/
     - [ ] T103: How can we model and query which people lived in the same city at the same time
     - [ ] T104: How can we model and query that a query affects a certain time period (give me all people who where a married goldsmith between 1580 and 1620)
