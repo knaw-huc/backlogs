@@ -1,4 +1,4 @@
-//current max task number: T147
+//current max task number: T150
 
 # New
 - [ ] T147: Investigate why 2TBI dataset.nq upload on September 11th didn't get all data into anansi.
@@ -8,9 +8,9 @@
 	This currently slows down the retrieval of the resourcesync changes.
 - [.] T140: Stardog-server @Golden Agents: size limit
 - [.] T147: Users, Roles, Permissions >> write design document
-- [ ] T148: research how much time is needed for upgrade to Java 11
+- [ ] T148: research how much time is needed for upgrade to Java 11 [cf. T133]
 - [ ] T149: research into dependencies in Timbuctoo
-
+- [ ] T150: NEWW VRE - add new attribute/facet 'Status' (value: 'Private' OR 'Public') to Publications and Receptions
 
 # Production blockers
   
