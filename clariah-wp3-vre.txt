@@ -48,7 +48,7 @@
   F010: a first public demo setup
     - [ ] T022: arrange a server
   F011: delegation
-    - [ ] T023: get the delegation example to work in the CLARIN pilot setup
+    - [.] T023: get the delegation example to work in the CLARIN pilot setup
     - [ ] T024: support delegation via the CLARIN pilot setup in the VRE
 # later
   - [ ] E001: investigate the use of WebDAV locking instead of file system "locking"
