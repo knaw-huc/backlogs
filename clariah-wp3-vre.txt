@@ -34,7 +34,7 @@
     - [X] T011: (general) service enable   
   F003: basic services @M9
     - [.] T012: Folia Tools (FLAT)
-    - [.] T013: Frog
+    - [X] T013: Frog
   F005: support viewers/editors
     - [X] T016: basic setup using a viewer for text as an example
     - [.] T017: XSLT recipe using the simple FOLIA viewer as an example
