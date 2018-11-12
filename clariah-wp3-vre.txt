@@ -5,9 +5,9 @@
 // - [-] cancelled item
 
 // Max
-// - T(ask)        022
+// - T(ask)        024
 // - B(ug)         001
-// - F(eature)     010
+// - F(eature)     011
 // - E(nhancement) 005
 
 # 2018-10
@@ -43,11 +43,13 @@
     - [X] T019: investigate switch from OwnCloud to NextCloud
     - [.] T017: enable Shibboleth as login
   F009: support for tags
-    - [ ] T020: basic support for (typed) tags
-    - [ ] T021: turn paths into tags
+    - [X] T020: basic support for (typed) tags
+    - [.] T021: add system tags
   F010: a first public demo setup
     - [ ] T022: arrange a server
-
+  F011: delegation
+    - [ ] T023: get the delegation example to work in the CLARIN pilot setup
+    - [ ] T024: support delegation via the CLARIN pilot setup in the VRE
 # later
   - [ ] E001: investigate the use of WebDAV locking instead of file system "locking"
   - [ ] E003: focus on error logging (on different levels)
