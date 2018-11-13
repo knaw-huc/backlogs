@@ -1,6 +1,7 @@
-//current max task number: T153
+//current max task number: T155
 
 # New
+- [ ] T155: Updaten van collectie metadata geeft geen goede foutmelding als de collectie niet bestaat.
 - [ ] T153: `timbuctoo gooit een 500 als de query niet goed parsed en zou de parse error en een 400 moeten teruggeven`
 	- Gebeurd bij bewerken dataset metadata (Lodewijk heeft de query)
 - [ ] T154: Indexering duurt lang / gebruikers zien niet wanneer deze klaar is
