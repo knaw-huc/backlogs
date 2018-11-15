@@ -1,6 +1,8 @@
-//current max task number: T155
+//current max task number: T156
 
 # New
+- [ ] T156: Do not make all collections editable by default.
+        - See: https://github.com/HuygensING/timbuctoo/blob/configure-collection-editability/documentation/design/collection-editability.adoc
 - [ ] T155: Updaten van collectie metadata geeft geen goede foutmelding als de collectie niet bestaat.
 - [ ] T153: `timbuctoo gooit een 500 als de query niet goed parsed en zou de parse error en een 400 moeten teruggeven`
 	- Gebeurd bij bewerken dataset metadata (Lodewijk heeft de query)
