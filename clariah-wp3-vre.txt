@@ -8,7 +8,7 @@
 // - T(ask)        024
 // - B(ug)         001
 // - F(eature)     011
-// - E(nhancement) 005
+// - E(nhancement) 006
 
 # 2018-10
   B001: fix demo
@@ -22,7 +22,8 @@
   - [ ] T004: create a JSON schema for the parameters document
   - [ ] T005: retrieve provenance info from (CLAM) services @CLARIAH_prov_workshop
   - [ ] T016: deploy docker service (experiment)
-  F007: Kafka-based provenance
+  - [ ] E006: onsistent work dir directory layout
+F007: Kafka-based provenance
   - [.] T003: create W3C PROV from the Kafka log + VRE registries @CLARIAH prov workshop
   F001: support metadata @M6
   - [ ] T006: ingest metadata and associate it with resources @M6
@@ -58,7 +59,7 @@
   F004: interactive services @M12ev
     - [ ] T014: Gretel
     - [ ] T015: PaQu
-
+  
   F006: remote standard corpora @M12ev
 
   - [ ] F001: dream up a nicer name
