@@ -4,6 +4,8 @@
 - [ ] T157: Resourcesync update fails because there is no resourcesync information available.
 	- Create a decent error message for resourcesync update when not import information is available.
 	- Make sure the resourcesync information is stored to disc, when a data set is created with resourcesync.
+	- Lodewijk created a new dataset and that got the resourcesync information.
+	- Could it be that the problem could arises after a resourcesync update?
 - [ ] T156: Do not make all collections editable by default.
         - See: https://github.com/HuygensING/timbuctoo/blob/configure-collection-editability/documentation/design/collection-editability.adoc
 - [ ] T155: Updaten van collectie metadata geeft geen goede foutmelding als de collectie niet bestaat.
