@@ -1,6 +1,7 @@
-//current max task number: T157
+//current max task number: T158
 
 # New
+- [ ] T158: Het opvragen van datasets met iets anders dat READ rechten geeft te weinig datasets terug.
 - [ ] T157: Resourcesync update fails because there is no resourcesync information available.
 	- Create a decent error message for resourcesync update when not import information is available.
 	- Make sure the resourcesync information is stored to disc, when a data set is created with resourcesync.
