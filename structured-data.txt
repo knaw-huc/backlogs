@@ -5,7 +5,7 @@
 # Production blockers
   
 # Production bugs
-  - [ ] T152: how should outgoing links (i.e. e.g. value=http://example.org) be configured? seems to be front end bug, see e.g. https://anansi.clariah.nl/details/u74ccc032adf8422d7ea92df96cd4783f0543db3b__tbi/https___tic_nodegoat_ugent_be_model_type_organization/https%3A%2F%2Fapi.nodegoat.ugent.be%2FngAx4W06kBHE1LnP0Aay4M1k -- outgoing link works with 'Open in new tab', but not with direct click
+  - [ ] T152: how should outgoing links (i.e. e.g. value=http://example.org) be configured? seems to be front end bug, see e.g. https://anansi.clariah.nl/details/u74ccc032adf8422d7ea92df96cd4783f0543db3b__tbi/https___tic_nodegoat_ugent_be_model_type_organization/https%3A%2F%2Fapi.nodegoat.ugent.be%2FngAx4W06kBHE1LnP0Aay4M1k and https://anansi.clariah.nl/details/u74ccc032adf8422d7ea92df96cd4783f0543db3b__tbi/https___tic_nodegoat_ugent_be_model_type_publication/https%3A%2F%2Fapi.nodegoat.ugent.be%2FngTq8j56dUAFdEgQ5Ttr9F6d -- outgoing link works with 'Open in new tab', but not with direct click
   - [ ] T144: Json-LD upload fails through the Timbuctoo-GUI (works with REST)
   - [ ] T158: Het opvragen van datasets met iets anders dat READ rechten geeft te weinig datasets terug.
 	- Geef me datasets terug waar ik write of admin rechten op heb geven te weinig datasetes terug.
