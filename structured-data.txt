@@ -1,4 +1,4 @@
-//current max task number: T158
+//current max task number: T159
 
 # New
 - [ ] T159: Resourcesync changes geeft geen deletes terug.
