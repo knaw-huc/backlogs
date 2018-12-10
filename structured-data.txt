@@ -1,6 +1,7 @@
 //current max task number: T158
 
 # New
+- [ ] T159: Resourcesync changes geeft geen deletes terug.
 
 # Production blockers
   
