@@ -2,6 +2,7 @@
 
 # New
 - [ ] T159: Resourcesync changes geeft geen deletes terug.
+- [ ] T160: optimise images of the datasets on anansi.clariah.nl (currently >10MB)
 
 # Production blockers
   
@@ -187,7 +188,7 @@ Caused by: java.security.NoSuchAlgorithmException: Unsupported secret key algori
   - [ ] T065: direct indexeren na upload gaat niet goed --> trigger te vroeg
   - [ ] T067: test server with db backups
   - [ ] T068: search in all datasets
-  - [ ] T072: re-ordering (and selection) of collection blocks/rectangles in dataset view 
+  - [ ] T072: be able to configure the selection and order of the collection tiles in dataset view 
   ~ [ ] T074: herstructureren dataset + stores
   ~ [ ] T075: requestlogging GoReplay
   - [ ] T076: add a mutation to mark a dataset as promoted in graphQL --> testen op DWC op data.huygens
