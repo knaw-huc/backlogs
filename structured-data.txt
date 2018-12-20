@@ -70,7 +70,7 @@ Caused by: java.security.NoSuchAlgorithmException: Unsupported secret key algori
   - [ ] T155: Updaten van collectie metadata geeft geen goede foutmelding als de collectie niet bestaat.
   - [ ] T153: `timbuctoo gooit een 500 als de query niet goed parsed en zou de parse error en een 400 moeten teruggeven`
 	- Gebeurd bij bewerken dataset metadata (Lodewijk heeft de query)
-  - [ ] T154: Indexering duurt lang / gebruikers zien niet wanneer deze klaar is
+  - [ ] T154: Indexering duurt lang / gebruikers zien niet wanneer deze klaar is [= JIRA SANDS-429]
 	- De Date range facets werken niet goed. Wanneer je bijvoorbeeld in 2TBI-dataset-personen (https://anansi.clariah.nl/details/u74ccc032adf8422d7ea92df96cd4783f0543db3b__tbi/schema_PersonList) filtert op een bepaalde range in sterfjaar, komen de resultaten niet altijd overeen met het ingestelde filter.
 	-  Update: na lang wachten (ca 12 uur) blijken de facets toch soms te zijn geïmplementeerd. Probleem blijft dat er geen feedback is over het proces, en dat bij de date ranges de resultaten niet altijd overeenkomen met het ingestelde filter en dat de getoonde aantallen in de filters vaak een veelvoud (2x / 3x) betreft van het aantal relevante resultaten.
 
