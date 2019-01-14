@@ -1,6 +1,7 @@
-//current max task number: T159
+//current max task number: T161
 
 # New
+- [ ] T161: extendSchema werkt niet voor datasets zonder data alleen bestaande collecties van datasets met data kunnen worden uitgebreid.
 - [ ] T159: Resourcesync changes geeft geen deletes terug.
 - [ ] T160: optimise images of the datasets on anansi.clariah.nl (currently >10MB)
 
