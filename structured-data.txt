@@ -1,6 +1,8 @@
-//current max task number: T161
+//current max task number: T162
 
 # New
+- [ ] T162: Zorg dat er een limiet komt op hoeveel types een dataset en hoeveel properties een type mag hebben
+	We moeten zorgen dat Timbuctoo niet meer onderuit gaat als we een data set te veel types of een type uit een dataset te veel properties heeft.
 - [ ] T161: extendSchema werkt niet voor datasets zonder data alleen bestaande collecties van datasets met data kunnen worden uitgebreid.
 - [ ] T159: Resourcesync changes geeft geen deletes terug.
 - [ ] T160: optimise images of the datasets on anansi.clariah.nl (currently >10MB)
