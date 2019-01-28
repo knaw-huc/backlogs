@@ -1,6 +1,9 @@
 //current max task number: T162
 
 # New
+- [ ] T163: De elastic search index raakt corrupt na verloop van tijd.
+	- Er moet worden uitgezocht wat dit veroorzaakt.
+	- je zou hiervoor een backup willen maken, die gewoon de lijst data geeft.
 - [ ] T162: Zorg dat er een limiet komt op hoeveel types een dataset en hoeveel properties een type mag hebben
 	We moeten zorgen dat Timbuctoo niet meer onderuit gaat als we een data set te veel types of een type uit een dataset te veel properties heeft.
 - [ ] T161: extendSchema werkt niet voor datasets zonder data alleen bestaande collecties van datasets met data kunnen worden uitgebreid.
