@@ -1,4 +1,4 @@
-//current max task number: T162
+//current max task number: T163
 
 # New
 - [ ] T163: De elastic search index raakt corrupt na verloop van tijd.
