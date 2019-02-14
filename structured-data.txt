@@ -1,7 +1,8 @@
-//current max task number: T164
+//current max task number: T165
 
 # New
-- [ ] T164: Huygens Elasticsearch kan de grote hoeveelheid data niet aan.
+- [ ] T165: Csv export werkt alleen met lijsten
+- [X] T164: Huygens Elasticsearch kan de grote hoeveelheid data niet aan.
 - [ ] T163: De elastic search index raakt corrupt na verloop van tijd.
 	- Er moet worden uitgezocht wat dit veroorzaakt.
 	- je zou hiervoor een backup willen maken, die gewoon de lijst data geeft.
