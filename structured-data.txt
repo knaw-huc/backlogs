@@ -155,6 +155,7 @@ Caused by: java.security.NoSuchAlgorithmException: Unsupported secret key algori
   - [ ] T126: Make it possible to import data from multiple resourcesync sources (Merge datasets)
   - [ ] T127: Elasticsearch 6.3.0 complains about multiple types with the indexing of 2TBI
           We now use elasticsearch 5.6.5, so we only run into problems when updating it.
+	  see: https://www.elastic.co/blog/index-type-parent-child-join-now-future-in-elasticsearch
   - [ ] T128: Refactor ResourceSync code to have only one set of DTOs (currently two in "xml" and "download")
     - [ ] T122: Make it possible to create handles (permanent URI's for entities). @EmPlaces
     - [ ] T119: import+map 'bron'-files of BioPort (xls, already in SURFdrive; needs some thinking on mapping/showing them in dataset)
