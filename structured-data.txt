@@ -1,4 +1,4 @@
-//current max task number: T166
+//current max task number: T167
 
 # New
 - [ ] T167: De GraphQL resourcesync discover query werkt niet
