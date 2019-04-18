@@ -1,6 +1,7 @@
 //current max task number: T166
 
 # New
+- [ ] T167: De GraphQL resourcesync discover query werkt niet
 - [ ] T166: Resourcesync haalt niet de hele dataset binnen
 - [ ] T165: Csv export werkt alleen met lijsten
 - [X] T164: Huygens Elasticsearch kan de grote hoeveelheid data niet aan.
