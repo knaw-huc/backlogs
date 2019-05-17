@@ -1,6 +1,7 @@
-//current max task number: T167
+//current max task number: T168
 
 # New
+- [ ] T168: Timbuctoo GUI ondersteund geen NQUD upload.
 - [ ] T167: De GraphQL resourcesync discover query werkt niet
 - [ ] T166: Resourcesync haalt niet de hele dataset binnen
 - [ ] T165: Csv export werkt alleen met lijsten
